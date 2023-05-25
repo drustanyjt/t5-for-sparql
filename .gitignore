@@ -161,4 +161,4 @@ cython_debug/
 
 
 # Spider Data
-./data/spider
+data/spider/database
