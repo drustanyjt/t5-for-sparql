@@ -165,4 +165,5 @@ data/spider/database
 
 # Checkpoint files, these should be hosted somewhere else
 models/*/checkpoints/*/*.bin
+models/*/checkpoints/*/*.pt
 checkpoints/*
