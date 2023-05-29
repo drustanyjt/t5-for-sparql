@@ -164,4 +164,5 @@ cython_debug/
 data/spider/database
 
 # Checkpoint files, these should be hosted somewhere else
-checkpoints/
+models/*/checkpoints/*/*.bin
+checkpoints/*
