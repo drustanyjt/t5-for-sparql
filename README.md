@@ -5,8 +5,55 @@ I am trying to train an LLM model that can convert Natural Language Questions to
 
 ## Some useful Commands
 
-For executing notebooks with sreen output [papaermill docs](https://papermill.readthedocs.io/en/latest/usage-cli.html):
+For executing notebooks with sreen output [papermill docs](https://papermill.readthedocs.io/en/latest/usage-cli.html):
 
 ```bash
 papermill text2sparql.ipynb test2sparql.papermill.ipynb --stdout-file --no-progress-bar
 ```
+
+
+## Dev Log
+
+### Week 3: 5 June - 11 June
+
+This week I presented my findings on the Text 2 SPARQL task to Zhiyuan,
+and we decided that it would be worthwhile to pursue the work by Bannerjee on finetuning T5.
+ValueNet4SPARQL might prove useful for validation of data between knowledge graphs and databases,
+but otherwise that and SGPT ill be left alone for now.
+
+From my research, the method that Bannerjee used to retrieve gold entity and questions was as follows:
+    0. Where `question` is the original NLQ, `sparql` is the golden SPARQL and `vocab_dict` is a hashtable of SPARQL tokens to special masks.
+    1. From the `sparql`, retrieve the listed entities and relations.
+    2. Replace relation labels that cannot be found with some null value: `vocab_dict['null']`.
+    3. Collate all entities (`wd: q36970`) and entity labels (`Jackie Chan`), as well as relations and relation labels.
+    4. Replace tokens in gold sparql query with their masks from `vocab_dict`.
+    5. Replace prefixes in collated prefixes with their masks from `vocab_dict`, and append this to the `question`.
+
+This gives a set of modifited NLQs, and modified SPARQL queries, that are used for training.
+
+The scripts are quite messy, so it would probably be better to reorganise the code into functions.
+
+### Week 4: 12 June - 17 June
+
+FALCON seems to succeed on the identifying hidden relations with no corresponding natural language label.
+
+Falcon has an F1 score of 83% on LC-QuAD
+Falcon 2.0 has an F1 score of 53% on LC-QuAD 2.0
+GenRL [2021](https://arxiv.org/pdf/2108.07337v1.pdf)
+Learning Abstract Meaning Representation [2021](https://arxiv.org/pdf/2012.01707.pdf)
+Implicit RL [2022](https://aclanthology.org/2022.findings-acl.312/0)
+Entity Linking using AMR [2023](https://2023.eswc-conferences.org/wp-content/uploads/2023/05/paper_Steinmetz_2023_Entity.pdf)
+
+
+#### Plan
+
+There are a few experiments that might be useful to try.
+    1. Finetuning T5 without passing any schema information as inputs,
+    relying on T5 to learn which words should be replaced with tokens.
+    2. Testing the ability for Falcon and EARL to retrieve Entities and Relations.
+
+It would probably speed up development if I convert this into a pipeline.
+
+Training the model has taken more time than anticipated.
+Even using `t5-small` sometimes CUDA runs out of memory during evaluation.
+If we can convert this into a python pipeline, it should be trivial to wrap this in Docker/Singularity and train on NUS HPC.
