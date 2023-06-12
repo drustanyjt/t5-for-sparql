@@ -1,0 +1,22 @@
+name: py310
+channels:
+  - huggingface
+  - pytorch
+  - nvidia
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.10
+  - pytorch-cuda=11.6
+  - pytorch==1.13.1
+  - ipykernel
+  - transformers
+  - datasets
+  - ipywidgets
+  - accelerate
+  - scikit-learn
+  - sentencepiece
+  - nbconvert
+  - papermill
+prefix: /home/yjunteng/anaconda3/envs/py310

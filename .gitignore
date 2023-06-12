@@ -167,3 +167,4 @@ data/spider/database
 models/*/checkpoints/*/*.bin
 models/*/checkpoints/*/*.pt
 checkpoints/*
+*.pth
