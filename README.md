@@ -44,6 +44,12 @@ Learning Abstract Meaning Representation [2021](https://arxiv.org/pdf/2012.01707
 Implicit RL [2022](https://aclanthology.org/2022.findings-acl.312/0)
 Entity Linking using AMR [2023](https://2023.eswc-conferences.org/wp-content/uploads/2023/05/paper_Steinmetz_2023_Entity.pdf)
 
+#### 16 May
+
+Found out today that I was training T5 on **10%** of the dataset, and evaluating on 90%.
+This explained the overfitting issue, but also it was 80% accurate.
+
+I switched it to **70%** and **30%**.
 
 #### Plan
 
