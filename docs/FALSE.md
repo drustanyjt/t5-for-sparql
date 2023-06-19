@@ -92,6 +92,7 @@ Entities:
     "wd:Q1418": "Nokia",
     "wdt:P3362": "operating income",
 }
+```
 
 Input:
 > Is Nokia's operating income -1.1 billion?
