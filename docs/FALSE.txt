@@ -1,0 +1,399 @@
+Input: What insecticide has the lowest combustion point? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q181322 insecticide  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q21073024 flammable solid  <extra_id_59> <extra_id_54>  p2107 <extra_id_60>
+Gold: select ?vr0 where { ?vr0 wdt: p31 wd: q21073024 . ?vr0 wdt: p2107 ?vr1 . ?vr0 wdt: p31 wd: q181322 } order by asc ( ?vr1 ) limit 5
+Gene: select ?vr0 where { ?vr0 wdt: p31 wd: q181322 . ?vr0 wdt: p2107 ?vr1 . ?vr0 wdt: p31 wd: q2107 } order by asc ( ?vr1 ) limit 5
+
+Input: What is the type of government of Saint Christopher in the Historical Period? <extra_id_59> <extra_id_54>  p122 <extra_id_60>  <extra_id_59> <extra_id_53>  q193507 Saint Christopher  <extra_id_59> <extra_id_54>  p2348 <extra_id_60>
+Gold: select ?vr0 where { wd: q193507 wdt: p2348 ?vr1 . ?vr1 wdt: p122 ?vr0 }
+Gene: select ?vr0 where { wd: q193507 wdt: p122 ?vr1 . ?vr1 wdt: p2348 ?vr0 }
+
+Input: What kind of specialty doctor diagnoses schizotypal personality disorder? <extra_id_59> <extra_id_54>  p1995 <extra_id_60>  <extra_id_59> <extra_id_53>  q861560 schizotypal personality disorder  <extra_id_59> <extra_id_54>  p3095 <extra_id_60>
+Gold: select ?vr0 where { wd: q861560 wdt: p1995 ?vr1 . ?vr1 wdt: p3095 ?vr0 }
+Gene: select ?vr0 where { wd: q861560 wdt: p3095 ?vr1 . ?vr1 wdt: p1995 ?vr0 }
+
+Input: how many records are held for pole vaulting? <extra_id_59> <extra_id_54>  p1000 <extra_id_60>  <extra_id_59> <extra_id_53>  q185027 pole vault
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p1000 wd: q185027 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { wd: q185027 wdt: p1000 ?vr0 }
+
+Input: Who is the person that was a student of Ivan Pavlov? <extra_id_59> <extra_id_53>  q5 human  <extra_id_59> <extra_id_53>  q42985 Ivan Pavlov  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_54>  p1066 <extra_id_60>
+Gold: select distinct ?vr0 where { wd: q42985 wdt: p1066 ?vr0 . ?vr0 wdt: p31 wd: q5 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p1066 wd: q42985 . ?vr0 wdt: p31 wd: q5 }
+
+Input: What is a afflicts of red blood cell? <extra_id_59> <extra_id_53>  q37187 red blood cell  <extra_id_59> <extra_id_54>  p689 <extra_id_60>
+Gold: select distinct ?vr0 where { ?vr0 wdt: p689 wd: q37187 }
+Gene: select distinct ?vr0 where { wd: q37187 wdt: p689 ?vr0 }
+
+Input: Who is the human with the MIN(Erdős number) whose occupation is mathematician ? <extra_id_59> <extra_id_54>  p106 <extra_id_60>  <extra_id_59> <extra_id_53>  q170790 mathematician  <extra_id_59> <extra_id_54>  p2021 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q5 human
+Gold: select ?vr0 where { ?vr0 wdt: p31 wd: q5 . ?vr0 wdt: p2021 ?vr1 . ?vr0 wdt: p106 wd: q170790 . } order by asc ( ?vr1 ) limit 5
+Gene: select ?vr0 where { ?vr0 wdt: p31 wd: q5 . ?vr0 wdt: p2021 ?vr1 . ?vr0 wdt: p106 wd: q170790 } order by asc ( ?vr1 ) limit 5
+
+Input: Is it true that the number of works of the Boston Public Library is more than 17880000.0? <extra_id_59> <extra_id_53>  q894583 Boston Public Library  <extra_id_59> <extra_id_54>  p3740 <extra_id_60>
+Gold: ask where { wd: q894583 wdt: p3740 ?vr0 filter ( ?vr0 > 17880000 . 0 ) }
+Gene: ask where { wd: q894583 wdt: p3740 ?vr0 filter ( ?vr0 > 1788000 . 0 ) }
+
+Input: Where is the name of the continent of the mountain belt in Mount Caywood? <extra_id_59> <extra_id_54>  p30 <extra_id_60>  <extra_id_59> <extra_id_53>  q6920087 Mount Caywood  <extra_id_59> <extra_id_54>  p4552 <extra_id_60>
+Gold: select ?vr0 where { wd: q6920087 wdt: p4552 ?vr1 . ?vr1 wdt: p30 ?vr0 }
+Gene: select ?vr0 where { wd: q6920087 wdt: p30 ?vr1 . ?vr1 wdt: p4552 ?vr0 }
+
+Input: How many people are on the New York Yankees? <extra_id_59> <extra_id_54>  p466 <extra_id_60>  <extra_id_59> <extra_id_53>  q213417 New York Yankees
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p466 wd: q213417 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { wd: q213417 wdt: p466 ?vr0 }
+
+Input: Which is the melting point of lindane? <extra_id_59> <extra_id_54>  p2101 <extra_id_60>  <extra_id_59> <extra_id_53>  q282003 lindane
+Gold: select distinct ?vr0 where { wd: q282003 wdt: p2101 ?vr0 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p2101 wd: q282003 }
+
+Input: Which kind of weather caused by coldburst contains the word "rain" in its name ? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_54>  p828 <extra_id_60>  <extra_id_59> <extra_id_53>  q1292121 shower  <extra_id_59> <extra_id_53>  q11663 weather
+Gold: select distinct ?vr0 ?vr0_label where { ?vr0 wdt: p31 wd: q11663 . ?vr0 wdt: p828 wd: q1292121 . ?vr0 rdfs:label ?vr0_label . filter ( contains ( lcase ( ?vr0_label ) , ' rain ' ) ) . filter ( lang ( ?vr0_label ) = ' en ' ) } limit 25
+Gene: select distinct ?vr0 ?vr0_label where { ?vr0 wdt: p31 wd: q1292121 . ?vr0 wdt: p828 wd: q11663 . ?vr0 rdfs:label ?vr0_label . filter ( contains ( lcase ( ?vr0_label ) , ' rain ' ) ) . filter ( lang ( ?vr0_label ) = ' en ' ) } limit 25
+
+Input: Name the country associated with Himachal Pradesh. <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q1177 Himachal Pradesh  <extra_id_59> <extra_id_53>  q6256 country  <extra_id_59> <extra_id_54>  p17 <extra_id_60>
+Gold: select distinct ?vr0 where { wd: q1177 wdt: p17 ?vr0 . ?vr0 wdt: p31 wd: q6256 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p17 wd: q1177 . ?vr0 wdt: p31 wd: q6256 }
+
+Input: What sovereign state belonging to the International Finance Corporation has the lowest unemployment rate? <extra_id_59> <extra_id_54>  p1198 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q656801 International Finance Corporation  <extra_id_59> <extra_id_54>  p463 <extra_id_60>  <extra_id_59> <extra_id_53>  q3624078 sovereign state
+Gold: select ?vr0 where { ?vr0 wdt: p31 wd: q3624078 . ?vr0 wdt: p1198 ?vr1 . ?vr0 wdt: p463 wd: q656801 } order by asc ( ?vr1 ) limit 5
+Gene: select ?vr0 where { ?vr0 wdt: p31 wd: q3624078 . ?vr0 wdt: p1198 ?vr1 . ?vr0 wdt: p463 wd: q656801 . } order by asc ( ?vr1 ) limit 5
+
+Input: What is plays of Axl Rose Fernando that has discovered is Bartolomeo Cristofori? <extra_id_59> <extra_id_53>  q11885 Axl Rose  <extra_id_59> <extra_id_54>  p1303 <extra_id_60>  <extra_id_59> <extra_id_54>  p61 <extra_id_60>  <extra_id_59> <extra_id_53>  q301597 Bartolomeo Cristofori
+Gold: select ?vr0 where { wd: q11885 wdt: p1303 ?vr0 . ?vr0 wdt: p61 wd: q301597 }
+Gene: select ?vr0 where { wd: q11885 wdt: p61 ?vr0 . ?vr0 wdt: p1303 wd: q301597 }
+
+Input: When did the Pridnestrovian Moldavian Republic have the head of state of Yevgeny Shevchuk? <extra_id_59>  <extra_id_56>  p35 <extra_id_60>  <extra_id_59> <extra_id_57>  p39 <extra_id_60>  <extra_id_59> <extra_id_53>  q907112 Transnistria  <extra_id_59> <extra_id_53>  q188409 Yevgeny Shevchuk  <extra_id_59>  <extra_id_55>  p35 <extra_id_60>
+Gold: select ?vr1 where { wd: q907112 p: p35 ?vr0 . ?vr0 ps: p35 wd: q188409 . ?vr0 pq: p39 ?vr1 }
+Gene: select ?vr1 where { wd: q188409 p: p35 ?vr0 . ?vr0 ps: p35 wd: q907112 . ?vr0 pq: p39 ?vr1 }
+
+Input: Where is the location in which the biscuit is produced? <extra_id_59> <extra_id_54>  p276 <extra_id_60>  <extra_id_59> <extra_id_54>  p2079 <extra_id_60>  <extra_id_59> <extra_id_53>  q13270 biscuit
+Gold: select ?vr0 where { wd: q13270 wdt: p2079 ?vr1 . ?vr1 wdt: p276 ?vr0 }
+Gene: select ?vr0 where { wd: q13270 wdt: p276 ?vr1 . ?vr1 wdt: p2079 ?vr0 }
+
+Input: What are the mythological serpent which start with the letter z <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q16326794 mythological serpent
+Gold: select distinct ?vr0 ?vr0_label where { ?vr0 wdt: p31 wd: q16326794 . ?vr0 rdfs:label ?vr0_label . filter ( strstarts ( lcase ( ?vr0_label ) , ' ž ' ) ) . filter ( lang ( ?vr0_label ) = ' en ' ) } limit 25
+Gene: select distinct ?vr0 ?vr0_label where { ?vr0 wdt: p31 wd: q16326794 . ?vr0 rdfs:label ?vr0_label . filter ( strstarts ( lcase ( ?vr0_label ) , ' z ' ) ) . filter ( lang ( ?vr0_label ) = ' en ' ) } limit 25
+
+Input: Is the gestation period of the Gorilla less than 324.0? <extra_id_59> <extra_id_54>  p3063 <extra_id_60>  <extra_id_59> <extra_id_53>  q36611 Gorilla
+Gold: ask where { wd: q36611 wdt: p3063 ?vr0 filter ( ?vr0 < 324 . 0 ) }
+Gene: ask where { wd: q36611 wdt: p3063 ?vr0 filter ( ?vr0 < 3244 . 0 ) }
+
+Input: What country is Salman of Saudi Arabia a citizen of? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q367825 Salman of Saudi Arabia  <extra_id_59> <extra_id_53>  q3624078 sovereign state  <extra_id_59> <extra_id_54>  p27 <extra_id_60>
+Gold: select distinct ?vr0 where { wd: q367825 wdt: p27 ?vr0 . ?vr0 wdt: p31 wd: q3624078 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p27 wd: q367825 . ?vr0 wdt: p31 wd: q3624078 }
+
+Input: Where is Clara Schumann buried in Alter Friedhof? <extra_id_59> <extra_id_53>  q318822 Alter Friedhof  <extra_id_59> <extra_id_57>  p625 <extra_id_60>  <extra_id_59>  <extra_id_56>  p119 <extra_id_60>  <extra_id_59>  <extra_id_55>  p119 <extra_id_60>  <extra_id_59> <extra_id_53>  q132232 Clara Schumann
+Gold: select ?vr1 where { wd: q132232 p: p119 ?vr0 . ?vr0 ps: p119 wd: q318822 . ?vr0 pq: p625 ?vr1 }
+Gene: select ?vr0 where { wd: q132232 p: p119 ?vr1 . ?vr1 ps: p119 ?vr0 . ?vr1 pq: p625 wd: q318822 }
+
+Input: Who are the writers mentioned in Bertie the Bus? <extra_id_59> <extra_id_53>  q4895666 Bertie the Bus  <extra_id_59> <extra_id_54>  p1441 <extra_id_60>  <extra_id_59> <extra_id_54>  p50 <extra_id_60>
+Gold: select ?vr0 where { wd: q4895666 wdt: p1441 ?vr1 . ?vr1 wdt: p50 ?vr0 }
+Gene: select ?vr0 where { wd: q4895666 wdt: p50 ?vr1 . ?vr1 wdt: p1441 ?vr0 }
+
+Input: Which is   prequel  game platform of The Sims 2: Pets ? <extra_id_59> <extra_id_54>  p156 <extra_id_60>  <extra_id_59> <extra_id_53>  q751329 The Sims 2: Pets  <extra_id_59> <extra_id_54>  p400 <extra_id_60>
+Gold: select ?vr0 where { wd: q751329 wdt: p400 ?vr1 . ?vr1 wdt: p156 ?vr0 }
+Gene: select ?vr0 where { wd: q751329 wdt: p156 ?vr1 . ?vr1 wdt: p400 ?vr0 }
+
+Input: Who painted the figures of 'Wolves Beyond the Border'? <extra_id_59> <extra_id_53>  q8030575 Wolves Beyond the Border  <extra_id_59> <extra_id_54>  p674 <extra_id_60>  <extra_id_59> <extra_id_54>  p170 <extra_id_60>
+Gold: select ?vr0 where { wd: q8030575 wdt: p674 ?vr1 . ?vr1 wdt: p170 ?vr0 }
+Gene: select ?vr0 where { wd: q8030575 wdt: p170 ?vr1 . ?vr1 wdt: p674 ?vr0 }
+
+Input: How many people speak the Urdu language? <extra_id_59> <extra_id_54>  p1098 <extra_id_60>  <extra_id_59> <extra_id_53>  q1617 Urdu
+Gold: select distinct ?vr0 where { wd: q1617 wdt: p1098 ?vr0 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p1098 wd: q1617 }
+
+Input: hat is the source of energy for this heat? <extra_id_59> <extra_id_53>  q44432 heat  <extra_id_59> <extra_id_54>  p618 <extra_id_60>
+Gold: select distinct ?vr0 where { ?vr0 wdt: p618 wd: q44432 }
+Gene: select distinct ?vr0 where { wd: q44432 wdt: p618 ?vr0 }
+
+Input: Who are some famous people educated at McGill University? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q201492 McGill University  <extra_id_59> <extra_id_54>  p69 <extra_id_60>  <extra_id_59> <extra_id_53>  q5 human
+Gold: select distinct ?vr0 where { ?vr0 wdt: p69 wd: q201492 . ?vr0 wdt: p31 wd: q5 }
+Gene: select distinct ?vr0 where { wd: q201492 wdt: p69 ?vr0 . ?vr0 wdt: p31 wd: q5 }
+
+Input: Is Nokia's operating income -1.1 billion? <extra_id_59> <extra_id_53>  q1418 Nokia  <extra_id_59> <extra_id_54>  p3362 <extra_id_60>
+Gold: ask where { wd: q1418 wdt: p3362 ?vr0 filter ( ?vr0 = -1100000000 ) }
+Gene: ask where { wd: q1418 wdt: p3362 ?vr0 filter ( ?vr0 = -1 . 1 ) }
+
+Input: How many settlements are in Tilburg? <extra_id_59> <extra_id_54>  p1383 <extra_id_60>  <extra_id_59> <extra_id_53>  q26430 Tilburg
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { wd: q26430 wdt: p1383 ?vr0 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p1383 wd: q26430 }
+
+Input: What is the occupation that both Coen brothers have? <extra_id_59> <extra_id_53>  q56095 Coen brothers  <extra_id_59> <extra_id_54>  p3989 <extra_id_60>  <extra_id_59> <extra_id_54>  p460 <extra_id_60>  <extra_id_59> <extra_id_53>  q56095 Coen brothers
+Gold: select ?vr0 ?vr1 where { wd: q56095 wdt: p3989 ?vr0 . wd: q56095 wdt: p460 ?vr1 }
+Gene: select ?vr0 ?vr1 where { wd: q56095 wdt: p460 ?vr0 . wd: q56095 wdt: p3989 ?vr1 }
+
+Input: How many eMedicine are acromegaly? <extra_id_59> <extra_id_53>  q189580 acromegaly  <extra_id_59> <extra_id_54>  p673 <extra_id_60>
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { wd: q189580 wdt: p673 ?vr0 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p673 wd: q189580 }
+
+Input: Which is the capital of the Duchy of Burgundy? <extra_id_59> <extra_id_53>  q4712 Duchy of Burgundy  <extra_id_59> <extra_id_54>  p1376 <extra_id_60>
+Gold: select distinct ?vr0 where { ?vr0 wdt: p1376 wd: q4712 }
+Gene: select distinct ?vr0 where { wd: q4712 wdt: p1376 ?vr0 }
+
+Input: Which political party is Nicolas Sarkozy member of? <extra_id_59> <extra_id_54>  p102 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q7278 political party  <extra_id_59> <extra_id_53>  q329 Nicolas Sarkozy
+Gold: select distinct ?vr0 where { wd: q329 wdt: p102 ?vr0 . ?vr0 wdt: p31 wd: q7278 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p102 wd: q329 . ?vr0 wdt: p31 wd: q7278 }
+
+Input: What is the convicted of and the member of of Axl_Rose ? <extra_id_59> <extra_id_54>  p1399 <extra_id_60>  <extra_id_59> <extra_id_54>  p463 <extra_id_60>  <extra_id_59> <extra_id_53>  q11885 Axl Rose  <extra_id_59> <extra_id_53>  q11885 Axl Rose
+Gold: select ?vr0 ?vr1 where { wd: q11885 wdt: p1399 ?vr0 . wd: q11885 wdt: p463 ?vr1 }
+Gene: select ?vr0 ?vr1 where { wd: q11885 wdt: p463 ?vr0 . wd: q11885 wdt: p1399 ?vr1 }
+
+Input: What is the sex or gender and the religion of Eddie_Izzard ? <extra_id_59> <extra_id_53>  q254022 Eddie Izzard  <extra_id_59> <extra_id_54>  p21 <extra_id_60>  <extra_id_59> <extra_id_54>  p140 <extra_id_60>  <extra_id_59> <extra_id_53>  q254022 Eddie Izzard
+Gold: select ?vr0 ?vr1 where { wd: q254022 wdt: p21 ?vr0 . wd: q254022 wdt: p140 ?vr1 }
+Gene: select ?vr0 ?vr1 where { wd: q254022 wdt: p140 ?vr0 . wd: q254022 wdt: p21 ?vr1 }
+
+Input: Who was Oracle Corporation taken over by <extra_id_59> <extra_id_54>  p1366 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q4830453 business  <extra_id_59> <extra_id_53>  q19900 Oracle
+Gold: select distinct ?vr0 where { ?vr0 wdt: p1366 wd: q19900 . ?vr0 wdt: p31 wd: q4830453 }
+Gene: select distinct ?vr0 where { wd: q19900 wdt: p1366 ?vr0 . ?vr0 wdt: p31 wd: q4830453 }
+
+Input: What is the business with the least debt on the Euronext? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q842108 Euronext  <extra_id_59> <extra_id_54>  p2133 <extra_id_60>  <extra_id_59> <extra_id_54>  p414 <extra_id_60>  <extra_id_59> <extra_id_53>  q4830453 business
+Gold: select ?vr0 where { ?vr0 wdt: p31 wd: q4830453 . ?vr0 wdt: p2133 ?vr1 . ?vr0 wdt: p414 wd: q842108 } order by asc ( ?vr1 ) limit 5
+Gene: select ?vr0 where { ?vr0 wdt: p31 wd: q4830453 . ?vr0 wdt: p2133 ?vr1 . ?vr0 wdt: p414 wd: q842108 . } order by asc ( ?vr1 ) limit 5
+
+Input: Who are the children of Tigranes the Great, who died from decapitation? <extra_id_59> <extra_id_54>  p509 <extra_id_60>  <extra_id_59> <extra_id_53>  q201303 Tigranes the Great  <extra_id_59> <extra_id_54>  p40 <extra_id_60>  <extra_id_59> <extra_id_53>  q204933 decapitation
+Gold: select ?vr0 where { wd: q201303 wdt: p40 ?vr0 . ?vr0 wdt: p509 wd: q204933 }
+Gene: select ?vr0 where { wd: q201303 wdt: p509 ?vr0 . ?vr0 wdt: p40 wd: q204933 }
+
+Input: Who is the spouse, and what position does Derek Jeter play in? <extra_id_59> <extra_id_54>  p413 <extra_id_60>  <extra_id_59> <extra_id_54>  p26 <extra_id_60>  <extra_id_59> <extra_id_53>  q353511 Derek Jeter  <extra_id_59> <extra_id_53>  q353511 Derek Jeter
+Gold: select ?vr0 ?vr1 where { wd: q353511 wdt: p26 ?vr0 . wd: q353511 wdt: p413 ?vr1 }
+Gene: select ?vr0 ?vr1 where { wd: q353511 wdt: p413 ?vr0 . wd: q353511 wdt: p26 ?vr1 }
+
+Input: What is the opposite of summer? <extra_id_59> <extra_id_53>  q1313 summer  <extra_id_59> <extra_id_54>  p461 <extra_id_60>
+Gold: select distinct ?vr0 where { wd: q1313 wdt: p461 ?vr0 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p461 wd: q1313 }
+
+Input: Who is the mother of Antonio Vivaldi? <extra_id_59> <extra_id_54>  p25 <extra_id_60>  <extra_id_59> <extra_id_53>  q1340 Antonio Vivaldi  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q5 human
+Gold: select distinct ?vr0 where { wd: q1340 wdt: p25 ?vr0 . ?vr0 wdt: p31 wd: q5 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p25 wd: q1340 . ?vr0 wdt: p31 wd: q5 }
+
+Input: Who was Louis XVIII of France's doctor ? <extra_id_59> <extra_id_53>  q5 human  <extra_id_59> <extra_id_53>  q7750 Louis XVIII of France  <extra_id_59> <extra_id_54>  p3205 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>
+Gold: select distinct ?vr0 where { wd: q7750 wdt: p3205 ?vr0 . ?vr0 wdt: p31 wd: q5 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p3205 wd: q7750 . ?vr0 wdt: p31 wd: q5 }
+
+Input: how many number of deaths for measles ? <extra_id_59> <extra_id_54>  p1120 <extra_id_60>  <extra_id_59> <extra_id_53>  q79793 measles
+Gold: select distinct ?vr0 where { wd: q79793 wdt: p1120 ?vr0 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { wd: q79793 wdt: p1120 ?vr0 }
+
+Input: Who is the child of the father of Hamengkubuwono V? <extra_id_59> <extra_id_54>  p3373 <extra_id_60>  <extra_id_59> <extra_id_53>  q2581159 Hamengkubuwono V  <extra_id_59> <extra_id_54>  p22 <extra_id_60>
+Gold: select ?vr0 where { wd: q2581159 wdt: p22 ?vr1 . ?vr1 wdt: p3373 ?vr0 }
+Gene: select ?vr0 where { wd: q2581159 wdt: p3373 ?vr1 . ?vr1 wdt: p22 ?vr0 }
+
+Input: Who is the student of Louis Pasteur? <extra_id_59> <extra_id_54>  p802 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q5 human  <extra_id_59> <extra_id_53>  q529 Louis Pasteur
+Gold: select distinct ?vr0 where { wd: q529 wdt: p802 ?vr0 . ?vr0 wdt: p31 wd: q5 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p802 wd: q529 . ?vr0 wdt: p31 wd: q5 }
+
+Input: What is the health specialty and the genetic association of Dyslexia ? <extra_id_59> <extra_id_54>  p2293 <extra_id_60>  <extra_id_59> <extra_id_53>  q132971 dyslexia  <extra_id_59> <extra_id_53>  q132971 dyslexia  <extra_id_59> <extra_id_54>  p1995 <extra_id_60>
+Gold: select ?vr0 ?vr1 where { wd: q132971 wdt: p1995 ?vr0 . wd: q132971 wdt: p2293 ?vr1 }
+Gene: select ?vr0 ?vr1 where { wd: q132971 wdt: p2293 ?vr0 . wd: q132971 wdt: p1995 ?vr1 }
+
+Input: What criteria was used for the world junior records in athletics? <extra_id_59>  <extra_id_56>  p2869 <extra_id_60>  <extra_id_59> <extra_id_53>  q542 athletics  <extra_id_59> <extra_id_53>  q592883 list of world junior records in athletics  <extra_id_59>  <extra_id_55>  p2869 <extra_id_60>  <extra_id_59> <extra_id_57>  p1013 <extra_id_60>
+Gold: select ?vr1 where { wd: q542 p: p2869 ?vr0 . ?vr0 ps: p2869 wd: q592883 . ?vr0 pq: p1013 ?vr1 }
+Gene: select ?vr0 where { wd: q592883 p: p2869 ?vr1 . ?vr1 ps: p2869 ?vr0 . ?vr1 pq: p1013 wd: q542 }
+
+Input: Which is the transcontinental country for the location of the French invasion of Russia? <extra_id_59> <extra_id_54>  p276 <extra_id_60>  <extra_id_59> <extra_id_53>  q1323642 transcontinental country  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q179250 French invasion of Russia
+Gold: select distinct ?vr0 where { wd: q179250 wdt: p276 ?vr0 . ?vr0 wdt: p31 wd: q1323642 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p276 wd: q179250 . ?vr0 wdt: p31 wd: q1323642 }
+
+Input: How many newspaper formats are there for the newspaper? <extra_id_59> <extra_id_53>  q11032 newspaper  <extra_id_59> <extra_id_54>  p3912 <extra_id_60>
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p3912 wd: q11032 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { wd: q11032 wdt: p3912 ?vr0 }
+
+Input: WHICH IS THE ICE HOCKEY TOURNAMENT THAT CONTAINS THE WORD TROPHY IN THEIR NAME <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q18325242 ice hockey tournament
+Gold: select distinct ?vr0 ?vr0_label where { ?vr0 wdt: p31 wd: q18325242 . ?vr0 rdfs:label ?vr0_label . filter ( contains ( lcase ( ?vr0_label ) , ' trophy ' ) ) . filter ( lang ( ?vr0_label ) = ' en ' ) } limit 25
+Gene: select distinct ?vr0 ?vr0_label where { ?vr0 wdt: p31 wd: q18325242 . ?vr0 rdfs:label ?vr0_label . filter ( contains ( lcase ( ?vr0_label ) , ' root ' ) ) . filter ( lang ( ?vr0_label ) = ' en ' ) } limit 25
+
+Input: Who is Isadora Duncan's mother? <extra_id_59> <extra_id_53>  q483512 Isadora Duncan  <extra_id_59> <extra_id_53>  q5 human  <extra_id_59> <extra_id_54>  p25 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>
+Gold: select distinct ?vr0 where { ?vr0 wdt: p25 wd: q483512 . ?vr0 wdt: p31 wd: q5 }
+Gene: select distinct ?vr0 where { wd: q483512 wdt: p25 ?vr0 . ?vr0 wdt: p31 wd: q5 }
+
+Input: What subsidiary entities are co-founded by Google? <extra_id_59> <extra_id_53>  q95 Google  <extra_id_59> <extra_id_54>  p112 <extra_id_60>  <extra_id_59> <extra_id_54>  p355 <extra_id_60>
+Gold: select ?vr0 where { wd: q95 wdt: p355 ?vr1 . ?vr1 wdt: p112 ?vr0 }
+Gene: select ?vr0 where { wd: q95 wdt: p112 ?vr1 . ?vr1 wdt: p355 ?vr0 }
+
+Input: When will the pressure and temperature of water reach the triple point stage? <extra_id_59> <extra_id_57>  p2076 <extra_id_60>  <extra_id_59>  <extra_id_56>  p873 <extra_id_60>  <extra_id_59> <extra_id_57>  p2077 <extra_id_60>  <extra_id_59> <extra_id_53>  q106410 triple point  <extra_id_59> <extra_id_53>  q283 water  <extra_id_59>  <extra_id_55>  p873 <extra_id_60>
+Gold: select ?vr1 ?vr2 where { wd: q283 p: p873 ?vr0 . ?vr0 ps: p873 wd: q106410 . ?vr0 pq: p2077 ?vr1 . ?vr0 pq: p2076 ?vr2 }
+Gene: select ?vr1 ?vr2 where { wd: q283 p: p873 ?vr0 . ?vr0 ps: p873 wd: q106410 . ?vr0 pq: p2076 ?vr1 . ?vr0 pq: p2077 ?vr2 }
+
+Input: What is the chrysanthemum taxonomic type? <extra_id_59> <extra_id_53>  q59882 Chrysanthemum  <extra_id_59> <extra_id_54>  p427 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q16521 taxon
+Gold: select distinct ?vr0 where { wd: q59882 wdt: p427 ?vr0 . ?vr0 wdt: p31 wd: q16521 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p427 wd: q59882 . ?vr0 wdt: p31 wd: q16521 }
+
+Input: How many awards were the Palme d'Or nominated for? <extra_id_59> <extra_id_54>  p1411 <extra_id_60>  <extra_id_59> <extra_id_53>  q179808 Palme d'Or
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p1411 wd: q179808 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { wd: q179808 wdt: p1411 ?vr0 }
+
+Input: When did military rank for officeholder of Salman of Saudi Arabia? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_54>  p1308 <extra_id_60>  <extra_id_59> <extra_id_53>  q367825 Salman of Saudi Arabia  <extra_id_59> <extra_id_53>  q56019 military rank
+Gold: select distinct ?vr0 where { ?vr0 wdt: p1308 wd: q367825 . ?vr0 wdt: p31 wd: q56019 }
+Gene: select distinct ?vr0 where { wd: q367825 wdt: p1308 ?vr0 . ?vr0 wdt: p31 wd: q56019 }
+
+Input: Tell me sports club whose name has the word akers in it. <extra_id_59> <extra_id_53>  q847017 sports club  <extra_id_59> <extra_id_54>  p31 <extra_id_60>
+Gold: select distinct ?vr0 ?vr0_label where { ?vr0 wdt: p31 wd: q847017 . ?vr0 rdfs:label ?vr0_label . filter ( contains ( lcase ( ?vr0_label ) , ' åkers ' ) ) . filter ( lang ( ?vr0_label ) = ' en ' ) } limit 25
+Gene: select distinct ?vr0 ?vr0_label where { ?vr0 wdt: p31 wd: q847017 . ?vr0 rdfs:label ?vr0_label . filter ( contains ( lcase ( ?vr0_label ) , ' akers ' ) ) . filter ( lang ( ?vr0_label ) = ' en ' ) } limit 25
+
+Input: What is capable of inhibiting or preventing pathological process of treated by  bleeding ? <extra_id_59> <extra_id_54>  p2175 <extra_id_60>  <extra_id_59> <extra_id_53>  q166019 bleeding  <extra_id_59> <extra_id_54>  p2176 <extra_id_60>
+Gold: select ?vr0 where { wd: q166019 wdt: p2176 ?vr1 . ?vr1 wdt: p2175 ?vr0 }
+Gene: select ?vr0 where { wd: q166019 wdt: p2175 ?vr1 . ?vr1 wdt: p2176 ?vr0 }
+
+Input: Who was cast as Rocky Horror for The Rocky Horror Picture Show? <extra_id_59> <extra_id_57>  p453 <extra_id_60>  <extra_id_59> <extra_id_53>  q751921 The Rocky Horror Picture Show  <extra_id_59>  <extra_id_56>  p161 <extra_id_60>  <extra_id_59> <extra_id_53>  q13500542 Rocky Horror  <extra_id_59>  <extra_id_55>  p161 <extra_id_60>
+Gold: select ?vr0 where { wd: q751921 p: p161 ?vr1 . ?vr1 ps: p161 ?vr0 . ?vr1 pq: p453 wd: q13500542 }
+Gene: select ?vr1 where { wd: q751921 p: p161 ?vr0 . ?vr0 ps: p161 wd: q13500542 . ?vr0 pq: p453 ?vr1 }
+
+Input: Tell me the degree Venus Williams received when studying at The Art Institute of Fort Lauderdale. <extra_id_59>  <extra_id_56>  p69 <extra_id_60>  <extra_id_59> <extra_id_57>  p512 <extra_id_60>  <extra_id_59> <extra_id_57>  p582 <extra_id_60>  <extra_id_59> <extra_id_53>  q11578 Venus Williams  <extra_id_59>  <extra_id_55>  p69 <extra_id_60>  <extra_id_59> <extra_id_53>  q7714375 The Art Institute of Fort Lauderdale
+Gold: select ?vr1 ?vr2 where { wd: q11578 p: p69 ?vr0 . ?vr0 ps: p69 wd: q7714375 . ?vr0 pq: p512 ?vr1 . ?vr0 pq: p582 ?vr2 }
+Gene: select ?vr1 ?vr2 where { wd: q11578 p: p69 ?vr0 . ?vr0 ps: p69 wd: q7714375 . ?vr0 pq: p582 ?vr1 . ?vr0 pq: p512 ?vr2 }
+
+Input: Name the test that measures the intelligence <extra_id_59> <extra_id_53>  q12021385 IQ test  <extra_id_59> <extra_id_53>  q83500 intelligence  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_54>  p1880 <extra_id_60>
+Gold: select distinct ?vr0 where { wd: q83500 wdt: p1880 ?vr0 . ?vr0 wdt: p31 wd: q12021385 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p1880 wd: q83500 . ?vr0 wdt: p31 wd: q12021385 }
+
+Input: What is the date did Midway games publish the video game Pac-Man, and where was it published? <extra_id_59>  <extra_id_55>  p123 <extra_id_60>  <extra_id_59> <extra_id_57>  p291 <extra_id_60>  <extra_id_59> <extra_id_57>  p577 <extra_id_60>  <extra_id_59>  <extra_id_56>  p123 <extra_id_60>  <extra_id_59> <extra_id_53>  q149947 Midway Games  <extra_id_59> <extra_id_53>  q173626 Pac-Man
+Gold: select ?vr1 ?vr2 where { wd: q173626 p: p123 ?vr0 . ?vr0 ps: p123 wd: q149947 . ?vr0 pq: p577 ?vr1 . ?vr0 pq: p291 ?vr2 }
+Gene: select ?vr1 ?vr2 where { wd: q149947 p: p123 ?vr0 . ?vr0 ps: p123 wd: q173626 . ?vr0 pq: p291 ?vr1 . ?vr0 pq: p577 ?vr2 }
+
+Input: When was the population of Special Region of Yogyakarta 3,542,078? <extra_id_59>  <extra_id_55>  p1082 <extra_id_60>  <extra_id_59> <extra_id_57>  p585 <extra_id_60>  <extra_id_59> <extra_id_53>  q3741 Special Region of Yogyakarta  <extra_id_59>  <extra_id_56>  p1082 <extra_id_60>
+Gold: select ?vr1 where { wd: q3741 p: p1082 ?vr0 . ?vr0 ps: p1082 ?vr2 filter ( contains ( ?vr2 , ' 3542078 ' ) ) . ?vr0 pq: p585 ?vr1 }
+Gene: select ?vr1 where { wd: q3741 p: p1082 ?vr0 . ?vr0 ps: p1082 ?vr2 filter ( contains ( ?vr2 , ' 3,542078 ' ) ) . ?vr0 pq: p585 ?vr1 }
+
+Input: Where was Christian liturgy founded? <extra_id_59> <extra_id_54>  p140 <extra_id_60>  <extra_id_59> <extra_id_54>  p740 <extra_id_60>  <extra_id_59> <extra_id_53>  q2285545 Christian liturgy
+Gold: select ?vr0 where { wd: q2285545 wdt: p140 ?vr1 . ?vr1 wdt: p740 ?vr0 }
+Gene: select ?vr0 where { wd: q2285545 wdt: p740 ?vr1 . ?vr1 wdt: p140 ?vr0 }
+
+Input: what is it that with the using of Sauteeing, causes an immediate effect called the Maillard reaction? <extra_id_59> <extra_id_54>  p2283 <extra_id_60>  <extra_id_59> <extra_id_53>  q1521462 sautéing  <extra_id_59> <extra_id_54>  p1536 <extra_id_60>  <extra_id_59> <extra_id_53>  q647574 Maillard reaction
+Gold: select ?vr0 where { wd: q1521462 wdt: p2283 ?vr0 . ?vr0 wdt: p1536 wd: q647574 }
+Gene: select ?vr0 where { wd: q647574 wdt: p2283 ?vr0 . ?vr0 wdt: p1536 wd: q1521462 }
+
+Input: What itime of the day that has the minimum time index in a Day? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_54>  p4895 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q1260524 time of the day  <extra_id_59> <extra_id_53>  q1260524 time of the day
+Gold: select ?vr0 where { ?vr0 wdt: p31 wd: q1260524 . ?vr0 wdt: p4895 ?vr1 . ?vr0 wdt: p31 wd: q1260524 } order by asc ( ?vr1 ) limit 5
+Gene: select ?vr0 where { ?vr0 wdt: p31 wd: q1260524 . ?vr0 wdt: p4895 ?vr1 . ?vr0 wdt: p31 wd: q1260524 . } order by asc ( ?vr1 ) limit 5
+
+Input: What is pedophilia? <extra_id_59> <extra_id_53>  q8388 pedophilia  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_54>  p1995 <extra_id_60>  <extra_id_59> <extra_id_53>  q1047113 specialty
+Gold: select distinct ?vr0 where { wd: q8388 wdt: p1995 ?vr0 . ?vr0 wdt: p31 wd: q1047113 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p1995 wd: q8388 . ?vr0 wdt: p31 wd: q1047113 }
+
+Input: Which is the historical country for the country of Ancient Egypt? <extra_id_59> <extra_id_54>  p17 <extra_id_60>  <extra_id_59> <extra_id_53>  q3024240 historical country  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q11768 Ancient Egypt
+Gold: select distinct ?vr0 where { ?vr0 wdt: p17 wd: q11768 . ?vr0 wdt: p31 wd: q3024240 }
+Gene: select distinct ?vr0 where { wd: q11768 wdt: p17 ?vr0 . ?vr0 wdt: p31 wd: q3024240 }
+
+Input: What is  the higher taxon of resident animal species of Hellabrunn Zoo ? <extra_id_59> <extra_id_54>  p1990 <extra_id_60>  <extra_id_59> <extra_id_53>  q264691 Hellabrunn Zoo  <extra_id_59> <extra_id_54>  p171 <extra_id_60>
+Gold: select ?vr0 where { wd: q264691 wdt: p1990 ?vr1 . ?vr1 wdt: p171 ?vr0 }
+Gene: select ?vr0 where { wd: q264691 wdt: p171 ?vr1 . ?vr1 wdt: p1990 ?vr0 }
+
+Input: How many breeds of Arabian horse are there? <extra_id_59> <extra_id_54>  p4743 <extra_id_60>  <extra_id_59> <extra_id_53>  q184138 Arabian horse
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p4743 wd: q184138 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { wd: q184138 wdt: p4743 ?vr0 }
+
+Input: Mention the manager or the director of David Foster. <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_54>  p1037 <extra_id_60>  <extra_id_59> <extra_id_53>  q2510436 vanity label  <extra_id_59> <extra_id_53>  q77112 David Foster
+Gold: select distinct ?vr0 where { ?vr0 wdt: p1037 wd: q77112 . ?vr0 wdt: p31 wd: q2510436 }
+Gene: select distinct ?vr0 where { wd: q77112 wdt: p1037 ?vr0 . ?vr0 wdt: p31 wd: q2510436 }
+
+Input: Name the newest NMHH rating category that replaces category IV? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q23683425 NMHH rating category  <extra_id_59> <extra_id_53>  q23830579 Category IV  <extra_id_59> <extra_id_54>  p2899 <extra_id_60>  <extra_id_59> <extra_id_54>  p1365 <extra_id_60>
+Gold: select ?vr0 where { ?vr0 wdt: p31 wd: q23683425 . ?vr0 wdt: p2899 ?vr1 . ?vr0 wdt: p1365 wd: q23830579 } order by asc ( ?vr1 ) limit 5
+Gene: select ?vr0 where { ?vr0 wdt: p31 wd: q23683425 . ?vr0 wdt: p2899 ?vr1 . ?vr0 wdt: p1365 wd: q23830579 } order by desc ( ?vr1 ) limit 5
+
+Input: Which is the intended public of children's literature? <extra_id_59> <extra_id_54>  p2360 <extra_id_60>  <extra_id_59> <extra_id_53>  q131539 children's literature
+Gold: select distinct ?vr0 where { wd: q131539 wdt: p2360 ?vr0 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p2360 wd: q131539 }
+
+Input: Who preceded chairwoman Michael Aresco in the Big East Conference in 2013? <extra_id_59> <extra_id_53>  q7820700 Big East Conference  <extra_id_59> <extra_id_54>  p1365 <extra_id_60>  <extra_id_59> <extra_id_54>  p488 <extra_id_60>  <extra_id_59> <extra_id_53>  q16150145 Michael Aresco
+Gold: select ?vr0 where { wd: q7820700 wdt: p1365 ?vr0 . ?vr0 wdt: p488 wd: q16150145 }
+Gene: select ?vr0 where { wd: q16150145 wdt: p1365 ?vr0 . ?vr0 wdt: p488 wd: q7820700 }
+
+Input: What is the PTSD treatment medicine? <extra_id_59> <extra_id_53>  q202387 post-traumatic stress disorder  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q11173 chemical compound  <extra_id_59> <extra_id_54>  p2176 <extra_id_60>
+Gold: select distinct ?vr0 where { wd: q202387 wdt: p2176 ?vr0 . ?vr0 wdt: p31 wd: q11173 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p2176 wd: q202387 . ?vr0 wdt: p31 wd: q11173 }
+
+Input: When was A.C. Milan retired from Head coach post? <extra_id_59>  <extra_id_55>  p286 <extra_id_60>  <extra_id_59>  <extra_id_56>  p286 <extra_id_60>  <extra_id_59> <extra_id_53>  q1543 A.C. Milan  <extra_id_59> <extra_id_57>  p582 <extra_id_60>
+Gold: select ?vr0 where { wd: q1543 p: p286 ?vr1 . ?vr1 ps: p286 ?vr0 . ?vr1 pq: p582 ?vr2 filter ( contains ( year ( ?vr2 ) , ' 2016 ' ) ) }
+Gene: select ?vr1 where { wd: q1543 p: p286 ?vr0 . ?vr0 ps: p286 ?vr2 filter ( contains ( ?vr2 , ' http://dbpedia.org/ontology/State ' ) ) . ?vr0 pq: p582 ?vr1 }
+
+Input: What is the market capitalization of Nokia? <extra_id_59> <extra_id_53>  q1418 Nokia  <extra_id_59> <extra_id_54>  p2226 <extra_id_60>
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { wd: q1418 wdt: p2226 ?vr0 }
+Gene: select distinct ?vr0 where { wd: q1418 wdt: p2226 ?vr0 }
+
+Input: Which is the phase point for water? <extra_id_59> <extra_id_54>  p873 <extra_id_60>  <extra_id_59> <extra_id_53>  q283 water
+Gold: select distinct ?vr0 where { wd: q283 wdt: p873 ?vr0 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p873 wd: q283 }
+
+Input: What is the guidance system of the Sonar ? <extra_id_59> <extra_id_53>  q133220 sonar  <extra_id_59> <extra_id_54>  p624 <extra_id_60>
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p624 wd: q133220 }
+Gene: select distinct ?vr0 where { wd: q133220 wdt: p624 ?vr0 }
+
+Input: What are the lands surrounding East Asia named? <extra_id_59> <extra_id_54>  p30 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q2418896 part of the world  <extra_id_59> <extra_id_53>  q27231 East Asia
+Gold: select distinct ?vr0 where { wd: q27231 wdt: p30 ?vr0 . ?vr0 wdt: p31 wd: q2418896 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p30 wd: q27231 . ?vr0 wdt: p31 wd: q2418896 }
+
+Input: What is the Die Hard film series <extra_id_59> <extra_id_53>  q105598 Die Hard  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q24856 film series  <extra_id_59> <extra_id_54>  p179 <extra_id_60>
+Gold: select distinct ?vr0 where { wd: q105598 wdt: p179 ?vr0 . ?vr0 wdt: p31 wd: q24856 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p179 wd: q105598 . ?vr0 wdt: p31 wd: q24856 }
+
+Input: "Which is language read of Inigo Jones, that has role model is French ?" <extra_id_59> <extra_id_54>  p1412 <extra_id_60>  <extra_id_59> <extra_id_53>  q150 French  <extra_id_59> <extra_id_54>  p737 <extra_id_60>  <extra_id_59> <extra_id_53>  q295929 Inigo Jones
+Gold: select ?vr0 where { wd: q295929 wdt: p1412 ?vr0 . ?vr0 wdt: p737 wd: q150 }
+Gene: select ?vr0 where { wd: q295929 wdt: p737 ?vr0 . ?vr0 wdt: p1412 wd: q150 }
+
+Input: how much is published by the association for computing machinery? <extra_id_59> <extra_id_54>  p123 <extra_id_60>  <extra_id_59> <extra_id_53>  q127992 Association for Computing Machinery
+Gold: select ( count ( ?vr0 ) as ?vr1 ) { ?vr0 wdt: p123 wd: q127992 }
+Gene: select ( count ( ?vr0 ) as ?vr1 ) { wd: q127992 wdt: p123 ?vr0 }
+
+Input: Was PHP influenced by C++ and PHP? <extra_id_59> <extra_id_53>  q59 PHP  <extra_id_59> <extra_id_54>  p737 <extra_id_60>  <extra_id_59> <extra_id_53>  q59 PHP  <extra_id_59> <extra_id_53>  q2407 C++  <extra_id_59> <extra_id_54>  p737 <extra_id_60>  <extra_id_59> <extra_id_53>  q59 PHP
+Gold: ask where { wd: q59 wdt: p737 wd: q2407 . wd: q59 wdt: p737 wd: q59 }
+Gene: ask where { wd: q59 wdt: p737 wd: q2407 . wd: q59 wdt: p737 wd: q2407 }
+
+Input: Who was Francisco Goya's student? <extra_id_59> <extra_id_53>  q5 human  <extra_id_59> <extra_id_54>  p1066 <extra_id_60>  <extra_id_59> <extra_id_53>  q5432 Francisco de Goya  <extra_id_59> <extra_id_54>  p31 <extra_id_60>
+Gold: select distinct ?vr0 where { ?vr0 wdt: p1066 wd: q5432 . ?vr0 wdt: p31 wd: q5 }
+Gene: select distinct ?vr0 where { wd: q5432 wdt: p1066 ?vr0 . ?vr0 wdt: p31 wd: q5 }
+
+Input: What is it? <extra_id_59> <extra_id_54>  p1269 <extra_id_60>  <extra_id_59> <extra_id_54>  p1279 <extra_id_60>  <extra_id_59> <extra_id_53>  q1516634 history of Suriname
+Gold: select ?vr0 where { wd: q1516634 wdt: p1269 ?vr0 . ?vr0 wdt: p1279 ?vr1 filter ( contains ( ?vr1 , ' 28.4 ' ) ) }
+Gene: select ?vr0 where { wd: q1516634 wdt: p1269 ?vr1 . ?vr1 wdt: p1279 ?vr0 }
+
+Input: Who is the Governor of Jersey that has Queen Elizabeth as their mother. <extra_id_59> <extra_id_54>  p25 <extra_id_60>  <extra_id_59> <extra_id_54>  p35 <extra_id_60>  <extra_id_59> <extra_id_53>  q10633 Queen Elizabeth The Queen Mother  <extra_id_59> <extra_id_53>  q785 Jersey
+Gold: select ?vr0 where { wd: q785 wdt: p35 ?vr0 . ?vr0 wdt: p25 wd: q10633 }
+Gene: select ?vr0 where { wd: q785 wdt: p25 ?vr0 . ?vr0 wdt: p35 wd: q10633 }
+
+Input: What is the Victoria Cross awarded for? <extra_id_59> <extra_id_54>  p3729 <extra_id_60>  <extra_id_59> <extra_id_53>  q219578 Victoria Cross  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q18328097 courage award
+Gold: select distinct ?vr0 where { wd: q219578 wdt: p3729 ?vr0 . ?vr0 wdt: p31 wd: q18328097 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p3729 wd: q219578 . ?vr0 wdt: p31 wd: q18328097 }
+
+Input: Did Chevy Chase receive an Emmy at the 61st Primetime Emmy Awards <extra_id_59> <extra_id_53>  q310926 Chevy Chase  <extra_id_59> <extra_id_53>  q1338932 61st Primetime Emmy Awards  <extra_id_59> <extra_id_54>  p166 <extra_id_60>  <extra_id_59> <extra_id_53>  q310926 Chevy Chase  <extra_id_59> <extra_id_53>  q123737 Emmy Award  <extra_id_59> <extra_id_54>  p166 <extra_id_60>
+Gold: ask where { wd: q310926 wdt: p166 wd: q123737 . wd: q310926 wdt: p166 wd: q1338932 }
+Gene: ask where { wd: q310926 wdt: p166 wd: q1338932 . wd: q310926 wdt: p166 wd: q123737 }
+
+Input: What career uses a fishing reel? <extra_id_59> <extra_id_54>  p2283 <extra_id_60>  <extra_id_59> <extra_id_54>  p106 <extra_id_60>  <extra_id_59> <extra_id_53>  q1572168 fishing reel  <extra_id_59> <extra_id_53>  q14373 fishing
+Gold: select ?vr0 where { wd: q14373 wdt: p106 ?vr0 . ?vr0 wdt: p2283 wd: q1572168 }
+Gene: select ?vr0 where { wd: q14373 wdt: p2283 ?vr0 . ?vr0 wdt: p106 wd: q1572168 }
+
+Input: Which is the instance of Puduhepa? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q268887 Puduhepa
+Gold: select distinct ?vr0 where { wd: q268887 wdt: p31 ?vr0 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p31 wd: q268887 }
+
+Input: "Who is taxon parent of moth, whose vernacular name is Butterflies and Moths?" <extra_id_59> <extra_id_54>  p171 <extra_id_60>  <extra_id_59> <extra_id_54>  p1843 <extra_id_60>  <extra_id_59> <extra_id_53>  q1725788 moth
+Gold: select ?vr0 where { wd: q1725788 wdt: p171 ?vr0 . ?vr0 wdt: p1843 ?vr1 filter ( contains ( ?vr1 , ' ButterfliesandMoths ' ) ) }
+Gene: select ?vr0 where { wd: q1725788 wdt: p171 ?vr0 . ?vr0 wdt: p1843 ?vr1 filter ( contains ( ?vr1 , ' Butterflies ' ) ) }
+
+Input: Name the compiler of the Annals of Mathematics, which has an Erdos number of 2. <extra_id_59> <extra_id_54>  p98 <extra_id_60>  <extra_id_59> <extra_id_54>  p2021 <extra_id_60>  <extra_id_59> <extra_id_53>  q564426 Annals of Mathematics
+Gold: select ?vr0 where { wd: q564426 wdt: p98 ?vr0 . ?vr0 wdt: p2021 ?vr1 filter ( contains ( ?vr1 , ' 2.0 ' ) ) }
+Gene: select ?vr0 where { wd: q564426 wdt: p98 ?vr0 . ?vr0 wdt: p2021 ?vr1 filter ( contains ( ?vr1 , ' 2. ' ) ) }
+
+Input: Which is separated from Saskatchewan? <extra_id_59> <extra_id_53>  q1989 Saskatchewan  <extra_id_59> <extra_id_54>  p807 <extra_id_60>
+Gold: select distinct ?vr0 where { wd: q1989 wdt: p807 ?vr0 }
+Gene: select distinct ?vr0 where { ?vr0 wdt: p807 wd: q1989 }
+
+Input: which  is working of   film producer of My Blue Heaven ? <extra_id_59> <extra_id_54>  p108 <extra_id_60>  <extra_id_59> <extra_id_53>  q733607 My Blue Heaven  <extra_id_59> <extra_id_54>  p162 <extra_id_60>
+Gold: select ?vr0 where { wd: q733607 wdt: p162 ?vr1 . ?vr1 wdt: p108 ?vr0 }
+Gene: select ?vr0 where { wd: q733607 wdt: p108 ?vr1 . ?vr1 wdt: p162 ?vr0 }
+
+Input: What is the saying that is present in the work of Satan? <extra_id_59> <extra_id_53>  q35230 Satan  <extra_id_59> <extra_id_54>  p460 <extra_id_60>  <extra_id_59> <extra_id_54>  p1441 <extra_id_60>  <extra_id_59> <extra_id_53>  q35230 Satan
+Gold: select ?vr0 ?vr1 where { wd: q35230 wdt: p460 ?vr0 . wd: q35230 wdt: p1441 ?vr1 }
+Gene: select ?vr0 ?vr1 where { wd: q35230 wdt: p1441 ?vr0 . wd: q35230 wdt: p460 ?vr1 }
+
+Input: what part of the history of Indonesia includes it's mots western part? <extra_id_59> <extra_id_53>  q331596 history of Indonesia  <extra_id_59> <extra_id_54>  p1335 <extra_id_60>  <extra_id_59> <extra_id_54>  p1269 <extra_id_60>
+Gold: select ?vr0 where { wd: q331596 wdt: p1269 ?vr0 . ?vr0 wdt: p1335 ?vr1 filter ( contains ( ?vr1 , ' 5.7239503495.01106918 ' ) ) }
+Gene: select ?vr0 where { wd: q331596 wdt: p1269 ?vr1 . ?vr1 wdt: p1335 ?vr0 }
+
+Input: "Which theme from Pascal, has a unit symbol of 公尺?" <extra_id_59> <extra_id_53>  q44395 pascal  <extra_id_59> <extra_id_54>  p5061 <extra_id_60>  <extra_id_59> <extra_id_54>  p144 <extra_id_60>
+Gold: select ?vr0 where { wd: q44395 wdt: p144 ?vr0 . ?vr0 wdt: p5061 ?vr1 filter ( contains ( ?vr1 , ' 公尺 ' ) ) }
+Gene: select ?vr0 where { wd: q44395 wdt: p144 ?vr0 . ?vr0 wdt: p5061 ?vr1 filter ( contains ( ?vr1 , ' ' ) ) }
+
+Input: What video game has the smallest amount of players and is free? <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_54>  p31 <extra_id_60>  <extra_id_59> <extra_id_53>  q21125433 free or open-source video game  <extra_id_59> <extra_id_53>  q21125433 free or open-source video game  <extra_id_59> <extra_id_54>  p1873 <extra_id_60>
+Gold: select ?vr0 where { ?vr0 wdt: p31 wd: q21125433 . ?vr0 wdt: p1873 ?vr1 . ?vr0 wdt: p31 wd: q21125433 } order by asc ( ?vr1 ) limit 5
+Gene: select ?vr0 where { ?vr0 wdt: p31 wd: q21125433 . ?vr0 wdt: p1873 ?vr1 . ?vr0 wdt: p31 wd: q21125433 . } order by asc ( ?vr1 ) limit 5
+
+Input: Why is the higher taxon of platyrrhini often confused with the monkey? <extra_id_59> <extra_id_53>  q237157 Platyrrhini  <extra_id_59> <extra_id_53>  q1367 monkey  <extra_id_59> <extra_id_54>  p171 <extra_id_60>  <extra_id_59> <extra_id_54>  p1889 <extra_id_60>
+Gold: select ?vr0 where { wd: q237157 wdt: p171 ?vr0 . ?vr0 wdt: p1889 wd: q1367 }
+Gene: select ?vr0 where { wd: q237157 wdt: p1889 ?vr0 . ?vr0 wdt: p171 wd: q1367 }
