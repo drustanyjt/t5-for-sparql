@@ -1,6 +1,6 @@
-from BaseLinker import BaseLinker
+from pipeline.BaseLinker import BaseLinker
 from typing import TypedDict
-from WikidataObject import WikidataObject, from_uri
+from pipeline.WikidataObject import WikidataObject, from_uri
 import os
 import requests
 
@@ -10,7 +10,7 @@ class Falcon2Linker(BaseLinker):
   def __init__(self):
     super().__init__(name="Falcon2Base")
   
-  def link_raw(self, utterance: str):
+  def link(self, utterance: str):
     results = {
       "utterance": utterance,
       "ents": [],

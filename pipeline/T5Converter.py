@@ -1,4 +1,4 @@
-from BaseConverter import BaseConverter
+from pipeline.BaseConverter import BaseConverter
 from pathlib import Path
 import json
 import re

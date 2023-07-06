@@ -1,4 +1,4 @@
-from WikidataObject import WikidataObject
+from pipeline.WikidataObject import WikidataObject
 
 class BaseConverter:
   def __init__(self, name: str):

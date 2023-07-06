@@ -1,5 +1,5 @@
-from BaseAnnotator import BaseAnnotator
-from WikidataObject import WikidataObject, from_json, from_uri
+from pipeline.BaseAnnotator import BaseAnnotator
+from pipeline.WikidataObject import WikidataObject, from_json, from_uri
 from SPARQLWrapper import SPARQLWrapper, POST, JSON
 
 wikidataSPARQL="https://query.wikidata.org/bigdata/namespace/wdq/sparql" 
