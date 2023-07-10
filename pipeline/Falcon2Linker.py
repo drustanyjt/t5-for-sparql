@@ -34,7 +34,7 @@ class Falcon2Linker(BaseLinker):
     return results
   
   def link_falcon2(self, utterance):
-    r = falcon2_call(utterance, mode='long')
+    r = falcon2_call(utterance, mode='local')
     entities = [x["URI"] for x in r['entities_wikidata']]
     relations = [x["URI"] for x in r['relations_wikidata']]
     return entities, relations
@@ -44,9 +44,25 @@ class Falcon2Linker(BaseLinker):
 def falcon2_call(text,mode='short'):
   headers = {'content-type': 'application/json', 'Accept-Charset': 'UTF-8'}
   try:
+    text = text.replace("What's", "What is") # Code crashes if you use What's or whats
+    text = text.replace("what's", "what is")
     text=text.replace('"','')
     text=text.replace("'","")
-    if mode=='short':
+    if mode == 'local':
+      url = 'http://localhost:6000/linker'
+      payload = '{"text":"'+text+'"}'
+      r = requests.post(url, data=payload.encode('utf-8'), headers=headers)
+      if r.status_code == 200:
+        response=r.json()
+        # print(response)
+        return response
+      else:
+        r = requests.post(url, data=payload.encode('utf-8'), headers=headers)
+        if r.status_code == 200:
+          response=r.json()
+          return response
+      raise Exception("No response recieved from SPARQL endpoint") 
+    elif mode=='short':
       url = 'https://labs.tib.eu/falcon/falcon2/api?mode=short&db=1'
       entities_wikidata=[]
       payload = '{"text":"'+text+'"}'
@@ -78,9 +94,8 @@ def falcon2_call(text,mode='short'):
           return response
       raise Exception("No response recieved from SPARQL endpoint") 
 
-  except:
-    raise
-    return -1  
+  except Exception as e:
+    raise e
 
 if __name__ == "__main__":
   sample_linker = Falcon2Linker()

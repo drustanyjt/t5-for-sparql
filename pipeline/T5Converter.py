@@ -141,6 +141,7 @@ if __name__=="__main__":
     wikisparql=sample_wikisparql
   )
   print(sample_masked)
+  print(sample_converter._unmask_generic(sample_masked["wikisparql"]))
 
 """
 SELECT ?vr0 WHERE {
