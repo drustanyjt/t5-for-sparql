@@ -63,3 +63,10 @@ It would probably speed up development if I convert this into a pipeline.
 Training the model has taken more time than anticipated.
 Even using `t5-small` sometimes CUDA runs out of memory during evaluation.
 If we can convert this into a python pipeline, it should be trivial to wrap this in Docker/Singularity and train on NUS HPC.
+
+
+### Problems
+
+Falcon2 does not distinguish between different prefixes.
+All prefixes default to wdt (wikidata entity).
+These are valid links but do not work with the SPARQL endpoint
