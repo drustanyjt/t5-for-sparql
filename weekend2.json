@@ -1,0 +1,1186 @@
+[
+  [
+    {
+      "utterance": "What periodical literature does Delta Air Lines use as a moutpiece?",
+      "ents": [
+        {
+          "uri": "http://www.wikidata.org/entity/Q1002697",
+          "prefix": "wd:",
+          "id": "Q1002697"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q988764",
+          "prefix": "wd:",
+          "id": "Q988764"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q41298",
+          "prefix": "wd:",
+          "id": "Q41298"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q4595717",
+          "prefix": "wd:",
+          "id": "Q4595717"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q6048740",
+          "prefix": "wd:",
+          "id": "Q6048740"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q188920",
+          "prefix": "wd:",
+          "id": "Q188920"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1184780",
+          "prefix": "wd:",
+          "id": "Q1184780"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1052539",
+          "prefix": "wd:",
+          "id": "Q1052539"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1658086",
+          "prefix": "wd:",
+          "id": "Q1658086"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q32396",
+          "prefix": "wd:",
+          "id": "Q32396"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q278510",
+          "prefix": "wd:",
+          "id": "Q278510"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q416938",
+          "prefix": "wd:",
+          "id": "Q416938"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q523753",
+          "prefix": "wd:",
+          "id": "Q523753"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q671722",
+          "prefix": "wd:",
+          "id": "Q671722"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q264269",
+          "prefix": "wd:",
+          "id": "Q264269"
+        }
+      ],
+      "rels": [
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P137",
+          "prefix": "wdt:",
+          "id": "P137"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P121",
+          "prefix": "wdt:",
+          "id": "P121"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P366",
+          "prefix": "wdt:",
+          "id": "P366"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P742",
+          "prefix": "wdt:",
+          "id": "P742"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P1535",
+          "prefix": "wdt:",
+          "id": "P1535"
+        }
+      ]
+    },
+    {
+      "utterance": "What periodical literature does Delta Air Lines use as a moutpiece?",
+      "fragments": [
+        "[DEF]",
+        "wd:",
+        "Q1002697 periodical",
+        "[DEF]",
+        "wd:",
+        "Q988764 Electronic Periodical Archive",
+        "[DEF]",
+        "wd:",
+        "Q41298 magazine",
+        "[DEF]",
+        "wd:",
+        "Q4595717 19th-century Catholic periodical literature",
+        "[DEF]",
+        "wd:",
+        "Q6048740 International Bibliography of Periodical Literature",
+        "[DEF]",
+        "wd:",
+        "Q188920 Delta Air Lines",
+        "[DEF]",
+        "wd:",
+        "Q1184780 Delta Air Lines Flight 191",
+        "[DEF]",
+        "wd:",
+        "Q1052539 list of Delta Air Lines destinations",
+        "[DEF]",
+        "wd:",
+        "Q1658086 Delta/Delta Heritage Air Park",
+        "[DEF]",
+        "wd:",
+        "Q32396 American Airlines",
+        "[DEF]",
+        "wd:",
+        "Q278510 A. A. Attanasio",
+        "[DEF]",
+        "wd:",
+        "Q416938 Mouthpiece",
+        "[DEF]",
+        "wd:",
+        "Q523753 mouthpiece",
+        "[DEF]",
+        "wd:",
+        "Q671722 woodwind mouthpiece",
+        "[DEF]",
+        "wd:",
+        "Q264269 Anna Atkins",
+        "[DEF]",
+        "wdt:",
+        "P137 operator",
+        "[DEF]",
+        "wdt:",
+        "P121 item operated",
+        "[DEF]",
+        "wdt:",
+        "P366 has use",
+        "[DEF]",
+        "wdt:",
+        "P742 pseudonym",
+        "[DEF]",
+        "wdt:",
+        "P1535 used by"
+      ]
+    },
+    {
+      "inputs": "What periodical literature does Delta Air Lines use as a moutpiece? <extra_id_59> <extra_id_53> Q1002697 periodical <extra_id_59> <extra_id_53> Q988764 Electronic Periodical Archive <extra_id_59> <extra_id_53> Q41298 magazine <extra_id_59> <extra_id_53> Q4595717 19th-century Catholic periodical literature <extra_id_59> <extra_id_53> Q6048740 International Bibliography of Periodical Literature <extra_id_59> <extra_id_53> Q188920 Delta Air Lines <extra_id_59> <extra_id_53> Q1184780 Delta Air Lines Flight 191 <extra_id_59> <extra_id_53> Q1052539 list of Delta Air Lines destinations <extra_id_59> <extra_id_53> Q1658086 Delta/Delta Heritage Air Park <extra_id_59> <extra_id_53> Q32396 American Airlines <extra_id_59> <extra_id_53> Q278510 A. A. Attanasio <extra_id_59> <extra_id_53> Q416938 Mouthpiece <extra_id_59> <extra_id_53> Q523753 mouthpiece <extra_id_59> <extra_id_53> Q671722 woodwind mouthpiece <extra_id_59> <extra_id_53> Q264269 Anna Atkins <extra_id_59> <extra_id_54> P137 operator <extra_id_59> <extra_id_54> P121 item operated <extra_id_59> <extra_id_54> P366 has use <extra_id_59> <extra_id_54> P742 pseudonym <extra_id_59> <extra_id_54> P1535 used by",
+      "labels": "<extra_id_6> <extra_id_21> <extra_id_39> <extra_id_19> <extra_id_33> <extra_id_53> q188920 <extra_id_54> p2813 <extra_id_39> <extra_id_38> <extra_id_39> <extra_id_54> p31 <extra_id_53> q1002697 <extra_id_15>"
+    }
+  ],
+  [
+    {
+      "utterance": "Who is the child of Ranavalona I's husband?",
+      "ents": [
+        {
+          "uri": "http://www.wikidata.org/entity/Q169794",
+          "prefix": "wd:",
+          "id": "Q169794"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q4139858",
+          "prefix": "wd:",
+          "id": "Q4139858"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q233326",
+          "prefix": "wd:",
+          "id": "Q233326"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q240168",
+          "prefix": "wd:",
+          "id": "Q240168"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1877054",
+          "prefix": "wd:",
+          "id": "Q1877054"
+        }
+      ],
+      "rels": [
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P40",
+          "prefix": "wdt:",
+          "id": "P40"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P22",
+          "prefix": "wdt:",
+          "id": "P22"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P25",
+          "prefix": "wdt:",
+          "id": "P25"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P398",
+          "prefix": "wdt:",
+          "id": "P398"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P1919",
+          "prefix": "wdt:",
+          "id": "P1919"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P26",
+          "prefix": "wdt:",
+          "id": "P26"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P1038",
+          "prefix": "wdt:",
+          "id": "P1038"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P3622",
+          "prefix": "wdt:",
+          "id": "P3622"
+        }
+      ]
+    },
+    {
+      "utterance": "Who is the child of Ranavalona I's husband?",
+      "fragments": [
+        "[DEF]",
+        "wd:",
+        "Q169794 Ranavalona I of Madagascar",
+        "[DEF]",
+        "wd:",
+        "Q4139858 Ranavalona",
+        "[DEF]",
+        "wd:",
+        "Q233326 Ranavalona III",
+        "[DEF]",
+        "wd:",
+        "Q240168 Ranavalona II of Madagascar",
+        "[DEF]",
+        "wd:",
+        "Q1877054 Nesolestes ranavalona",
+        "[DEF]",
+        "wdt:",
+        "P40 child",
+        "[DEF]",
+        "wdt:",
+        "P22 father",
+        "[DEF]",
+        "wdt:",
+        "P25 mother",
+        "[DEF]",
+        "wdt:",
+        "P398 child astronomical body",
+        "[DEF]",
+        "wdt:",
+        "P1919 Ministry of Education of Chile school ID",
+        "[DEF]",
+        "wdt:",
+        "P26 spouse",
+        "[DEF]",
+        "wdt:",
+        "P1038 relative",
+        "[DEF]",
+        "wdt:",
+        "P3622 Russian Bandy Federation player ID"
+      ]
+    },
+    {
+      "inputs": "Who is the child of Ranavalona I's husband? <extra_id_59> <extra_id_53> Q169794 Ranavalona I of Madagascar <extra_id_59> <extra_id_53> Q4139858 Ranavalona <extra_id_59> <extra_id_53> Q233326 Ranavalona III <extra_id_59> <extra_id_53> Q240168 Ranavalona II of Madagascar <extra_id_59> <extra_id_53> Q1877054 Nesolestes ranavalona <extra_id_59> <extra_id_54> P40 child <extra_id_59> <extra_id_54> P22 father <extra_id_59> <extra_id_54> P25 mother <extra_id_59> <extra_id_54> P398 child astronomical body <extra_id_59> <extra_id_54> P1919 Ministry of Education of Chile school ID <extra_id_59> <extra_id_54> P26 spouse <extra_id_59> <extra_id_54> P1038 relative <extra_id_59> <extra_id_54> P3622 Russian Bandy Federation player ID",
+      "labels": "<extra_id_6> <extra_id_39> <extra_id_19> <extra_id_33> <extra_id_53> q169794 <extra_id_54> p26 <extra_id_40> <extra_id_38> <extra_id_40> <extra_id_54> p22 <extra_id_39> <extra_id_15>"
+    }
+  ],
+  [
+    {
+      "utterance": "Is it true Jeff_Bridges occupation Lane Chandler and photographer ?",
+      "ents": [
+        {
+          "uri": "http://www.wikidata.org/entity/Q1804811",
+          "prefix": "wd:",
+          "id": "Q1804811"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q49272",
+          "prefix": "wd:",
+          "id": "Q49272"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q142206",
+          "prefix": "wd:",
+          "id": "Q142206"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q232459",
+          "prefix": "wd:",
+          "id": "Q232459"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q656723",
+          "prefix": "wd:",
+          "id": "Q656723"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1741653",
+          "prefix": "wd:",
+          "id": "Q1741653"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q28640",
+          "prefix": "wd:",
+          "id": "Q28640"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q114046",
+          "prefix": "wd:",
+          "id": "Q114046"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q188686",
+          "prefix": "wd:",
+          "id": "Q188686"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q194465",
+          "prefix": "wd:",
+          "id": "Q194465"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q33231",
+          "prefix": "wd:",
+          "id": "Q33231"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q5826652",
+          "prefix": "wd:",
+          "id": "Q5826652"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q7187764",
+          "prefix": "wd:",
+          "id": "Q7187764"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q7187767",
+          "prefix": "wd:",
+          "id": "Q7187767"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q7756995",
+          "prefix": "wd:",
+          "id": "Q7756995"
+        }
+      ],
+      "rels": [
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P106",
+          "prefix": "wdt:",
+          "id": "P106"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P425",
+          "prefix": "wdt:",
+          "id": "P425"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P672",
+          "prefix": "wdt:",
+          "id": "P672"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P867",
+          "prefix": "wdt:",
+          "id": "P867"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P918",
+          "prefix": "wdt:",
+          "id": "P918"
+        }
+      ]
+    },
+    {
+      "utterance": "Is it true Jeff_Bridges occupation Lane Chandler and photographer ?",
+      "fragments": [
+        "[DEF]",
+        "wd:",
+        "Q1804811 Lane Chandler",
+        "[DEF]",
+        "wd:",
+        "Q49272 Chandler",
+        "[DEF]",
+        "wd:",
+        "Q142206 Chandler",
+        "[DEF]",
+        "wd:",
+        "Q232459 Chandler",
+        "[DEF]",
+        "wd:",
+        "Q656723 Chandler",
+        "[DEF]",
+        "wd:",
+        "Q1741653 Nicholas True, Baron True",
+        "[DEF]",
+        "wd:",
+        "Q28640 profession",
+        "[DEF]",
+        "wd:",
+        "Q114046 occupation",
+        "[DEF]",
+        "wd:",
+        "Q188686 military occupation",
+        "[DEF]",
+        "wd:",
+        "Q194465 annexation",
+        "[DEF]",
+        "wd:",
+        "Q33231 photographer",
+        "[DEF]",
+        "wd:",
+        "Q5826652 The Photographer",
+        "[DEF]",
+        "wd:",
+        "Q7187764 Photographer",
+        "[DEF]",
+        "wd:",
+        "Q7187767 Photographer",
+        "[DEF]",
+        "wd:",
+        "Q7756995 The Photographer",
+        "[DEF]",
+        "wdt:",
+        "P106 occupation",
+        "[DEF]",
+        "wdt:",
+        "P425 field of this occupation",
+        "[DEF]",
+        "wdt:",
+        "P672 MeSH tree code",
+        "[DEF]",
+        "wdt:",
+        "P867 ROME Occupation Code",
+        "[DEF]",
+        "wdt:",
+        "P918 NOC Occupation Code"
+      ]
+    },
+    {
+      "inputs": "Is it true Jeff_Bridges occupation Lane Chandler and photographer ? <extra_id_59> <extra_id_53> Q1804811 Lane Chandler <extra_id_59> <extra_id_53> Q49272 Chandler <extra_id_59> <extra_id_53> Q142206 Chandler <extra_id_59> <extra_id_53> Q232459 Chandler <extra_id_59> <extra_id_53> Q656723 Chandler <extra_id_59> <extra_id_53> Q1741653 Nicholas True, Baron True <extra_id_59> <extra_id_53> Q28640 profession <extra_id_59> <extra_id_53> Q114046 occupation <extra_id_59> <extra_id_53> Q188686 military occupation <extra_id_59> <extra_id_53> Q194465 annexation <extra_id_59> <extra_id_53> Q33231 photographer <extra_id_59> <extra_id_53> Q5826652 The Photographer <extra_id_59> <extra_id_53> Q7187764 Photographer <extra_id_59> <extra_id_53> Q7187767 Photographer <extra_id_59> <extra_id_53> Q7756995 The Photographer <extra_id_59> <extra_id_54> P106 occupation <extra_id_59> <extra_id_54> P425 field of this occupation <extra_id_59> <extra_id_54> P672 MeSH tree code <extra_id_59> <extra_id_54> P867 ROME Occupation Code <extra_id_59> <extra_id_54> P918 NOC Occupation Code",
+      "labels": "<extra_id_4> <extra_id_19> <extra_id_33> <extra_id_53> q174843 <extra_id_54> p106 <extra_id_53> q1804811 <extra_id_38> <extra_id_53> q174843 <extra_id_54> p106 <extra_id_53> q33231 <extra_id_15>"
+    }
+  ],
+  [
+    {
+      "utterance": "What is the pre-requisite of phase matter of Galinstan?",
+      "ents": [
+        {
+          "uri": "http://www.wikidata.org/entity/Q675176",
+          "prefix": "wd:",
+          "id": "Q675176"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q104837",
+          "prefix": "wd:",
+          "id": "Q104837"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q724967",
+          "prefix": "wd:",
+          "id": "Q724967"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q306379",
+          "prefix": "wd:",
+          "id": "Q306379"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q11430",
+          "prefix": "wd:",
+          "id": "Q11430"
+        }
+      ],
+      "rels": []
+    },
+    {
+      "utterance": "What is the pre-requisite of phase matter of Galinstan?",
+      "fragments": [
+        "[DEF]",
+        "wd:",
+        "Q675176 Galinstan",
+        "[DEF]",
+        "wd:",
+        "Q104837 phase",
+        "[DEF]",
+        "wd:",
+        "Q724967 Law of Requisite Variety",
+        "[DEF]",
+        "wd:",
+        "Q306379 G2 phase",
+        "[DEF]",
+        "wd:",
+        "Q11430 state of matter"
+      ]
+    },
+    {
+      "inputs": "What is the pre-requisite of phase matter of Galinstan? <extra_id_59> <extra_id_53> Q675176 Galinstan <extra_id_59> <extra_id_53> Q104837 phase <extra_id_59> <extra_id_53> Q724967 Law of Requisite Variety <extra_id_59> <extra_id_53> Q306379 G2 phase <extra_id_59> <extra_id_53> Q11430 state of matter",
+      "labels": "<extra_id_6> <extra_id_39> <extra_id_19> <extra_id_33> <extra_id_53> q675176 <extra_id_54> p515 <extra_id_40> <extra_id_38> <extra_id_40> <extra_id_54> p156 <extra_id_39> <extra_id_15>"
+    }
+  ],
+  [
+    {
+      "utterance": "Which is the operating income for Qantas?",
+      "ents": [
+        {
+          "uri": "http://www.wikidata.org/entity/Q32491",
+          "prefix": "wd:",
+          "id": "Q32491"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q931561",
+          "prefix": "wd:",
+          "id": "Q931561"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1164721",
+          "prefix": "wd:",
+          "id": "Q1164721"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1164722",
+          "prefix": "wd:",
+          "id": "Q1164722"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1164943",
+          "prefix": "wd:",
+          "id": "Q1164943"
+        }
+      ],
+      "rels": [
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P3362",
+          "prefix": "wdt:",
+          "id": "P3362"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P306",
+          "prefix": "wdt:",
+          "id": "P306"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P582",
+          "prefix": "wdt:",
+          "id": "P582"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P1691",
+          "prefix": "wdt:",
+          "id": "P1691"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P1789",
+          "prefix": "wdt:",
+          "id": "P1789"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P2139",
+          "prefix": "wdt:",
+          "id": "P2139"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P742",
+          "prefix": "wdt:",
+          "id": "P742"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P1879",
+          "prefix": "wdt:",
+          "id": "P1879"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P2295",
+          "prefix": "wdt:",
+          "id": "P2295"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P2770",
+          "prefix": "wdt:",
+          "id": "P2770"
+        }
+      ]
+    },
+    {
+      "utterance": "Which is the operating income for Qantas?",
+      "fragments": [
+        "[DEF]",
+        "wd:",
+        "Q32491 Qantas",
+        "[DEF]",
+        "wd:",
+        "Q931561 Jeffrey Dunn",
+        "[DEF]",
+        "wd:",
+        "Q1164721 Mantas",
+        "[DEF]",
+        "wd:",
+        "Q1164722 Mantas",
+        "[DEF]",
+        "wd:",
+        "Q1164943 Dantas",
+        "[DEF]",
+        "wdt:",
+        "P3362 operating income",
+        "[DEF]",
+        "wdt:",
+        "P306 operating system",
+        "[DEF]",
+        "wdt:",
+        "P582 end time",
+        "[DEF]",
+        "wdt:",
+        "P1691 operations and procedures key (OPS)",
+        "[DEF]",
+        "wdt:",
+        "P1789 chief operating officer",
+        "[DEF]",
+        "wdt:",
+        "P2139 total revenue",
+        "[DEF]",
+        "wdt:",
+        "P742 pseudonym",
+        "[DEF]",
+        "wdt:",
+        "P1879 income classification (Philippines)",
+        "[DEF]",
+        "wdt:",
+        "P2295 net profit",
+        "[DEF]",
+        "wdt:",
+        "P2770 source of income"
+      ]
+    },
+    {
+      "inputs": "Which is the operating income for Qantas? <extra_id_59> <extra_id_53> Q32491 Qantas <extra_id_59> <extra_id_53> Q931561 Jeffrey Dunn <extra_id_59> <extra_id_53> Q1164721 Mantas <extra_id_59> <extra_id_53> Q1164722 Mantas <extra_id_59> <extra_id_53> Q1164943 Dantas <extra_id_59> <extra_id_54> P3362 operating income <extra_id_59> <extra_id_54> P306 operating system <extra_id_59> <extra_id_54> P582 end time <extra_id_59> <extra_id_54> P1691 operations and procedures key (OPS) <extra_id_59> <extra_id_54> P1789 chief operating officer <extra_id_59> <extra_id_54> P2139 total revenue <extra_id_59> <extra_id_54> P742 pseudonym <extra_id_59> <extra_id_54> P1879 income classification (Philippines) <extra_id_59> <extra_id_54> P2295 net profit <extra_id_59> <extra_id_54> P2770 source of income",
+      "labels": "<extra_id_6> <extra_id_21> <extra_id_39> <extra_id_19> <extra_id_33> <extra_id_53> q32491 <extra_id_54> p3362 <extra_id_39> <extra_id_15>"
+    }
+  ],
+  [
+    {
+      "utterance": "which cola starts with the letter p",
+      "ents": [
+        {
+          "uri": "http://www.wikidata.org/entity/Q38453",
+          "prefix": "wd:",
+          "id": "Q38453"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q114264",
+          "prefix": "wd:",
+          "id": "Q114264"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q134041",
+          "prefix": "wd:",
+          "id": "Q134041"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q222904",
+          "prefix": "wd:",
+          "id": "Q222904"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q888510",
+          "prefix": "wd:",
+          "id": "Q888510"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q9788",
+          "prefix": "wd:",
+          "id": "Q9788"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q133492",
+          "prefix": "wd:",
+          "id": "Q133492"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q293618",
+          "prefix": "wd:",
+          "id": "Q293618"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1168233",
+          "prefix": "wd:",
+          "id": "Q1168233"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1579140",
+          "prefix": "wd:",
+          "id": "Q1579140"
+        }
+      ],
+      "rels": [
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P17",
+          "prefix": "wdt:",
+          "id": "P17"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P527",
+          "prefix": "wdt:",
+          "id": "P527"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P1350",
+          "prefix": "wdt:",
+          "id": "P1350"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P47",
+          "prefix": "wdt:",
+          "id": "P47"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P54",
+          "prefix": "wdt:",
+          "id": "P54"
+        }
+      ]
+    },
+    {
+      "utterance": "which cola starts with the letter p",
+      "fragments": [
+        "[DEF]",
+        "wd:",
+        "Q38453 Columbia",
+        "[DEF]",
+        "wd:",
+        "Q114264 Cola",
+        "[DEF]",
+        "wd:",
+        "Q134041 cola",
+        "[DEF]",
+        "wd:",
+        "Q222904 Cola",
+        "[DEF]",
+        "wd:",
+        "Q888510 Cola",
+        "[DEF]",
+        "wd:",
+        "Q9788 letter",
+        "[DEF]",
+        "wd:",
+        "Q133492 letter",
+        "[DEF]",
+        "wd:",
+        "Q293618 Letter",
+        "[DEF]",
+        "wd:",
+        "Q1168233 The Letter",
+        "[DEF]",
+        "wd:",
+        "Q1579140 The Letter",
+        "[DEF]",
+        "wdt:",
+        "P17 country",
+        "[DEF]",
+        "wdt:",
+        "P527 has part(s)",
+        "[DEF]",
+        "wdt:",
+        "P1350 number of matches played/races/starts",
+        "[DEF]",
+        "wdt:",
+        "P47 shares border with",
+        "[DEF]",
+        "wdt:",
+        "P54 member of sports team"
+      ]
+    },
+    {
+      "inputs": "which cola starts with the letter p <extra_id_59> <extra_id_53> Q38453 Columbia <extra_id_59> <extra_id_53> Q114264 Cola <extra_id_59> <extra_id_53> Q134041 cola <extra_id_59> <extra_id_53> Q222904 Cola <extra_id_59> <extra_id_53> Q888510 Cola <extra_id_59> <extra_id_53> Q9788 letter <extra_id_59> <extra_id_53> Q133492 letter <extra_id_59> <extra_id_53> Q293618 Letter <extra_id_59> <extra_id_53> Q1168233 The Letter <extra_id_59> <extra_id_53> Q1579140 The Letter <extra_id_59> <extra_id_54> P17 country <extra_id_59> <extra_id_54> P527 has part(s) <extra_id_59> <extra_id_54> P1350 number of matches played/races/starts <extra_id_59> <extra_id_54> P47 shares border with <extra_id_59> <extra_id_54> P54 member of sports team",
+      "labels": "<extra_id_6> <extra_id_21> <extra_id_39> <extra_id_46> <extra_id_19> <extra_id_33> <extra_id_39> <extra_id_54> p31 <extra_id_53> q134041 <extra_id_38> <extra_id_39> <extra_id_2> <extra_id_46> <extra_id_38> <extra_id_22> <extra_id_1> <extra_id_32> <extra_id_1> <extra_id_23> <extra_id_1> <extra_id_46> <extra_id_12> <extra_id_31> <extra_id_34> p <extra_id_34> <extra_id_12> <extra_id_12> <extra_id_38> <extra_id_22> <extra_id_1> <extra_id_13> <extra_id_1> <extra_id_46> <extra_id_12> <extra_id_37> <extra_id_34> en <extra_id_34> <extra_id_12> <extra_id_15> <extra_id_8> 25"
+    }
+  ],
+  [
+    {
+      "utterance": "Is the right ascension of malin 1 less than 15.1398?",
+      "ents": [
+        {
+          "uri": "http://www.wikidata.org/entity/Q13442",
+          "prefix": "wd:",
+          "id": "Q13442"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q403830",
+          "prefix": "wd:",
+          "id": "Q403830"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q927112",
+          "prefix": "wd:",
+          "id": "Q927112"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1583172",
+          "prefix": "wd:",
+          "id": "Q1583172"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q204659",
+          "prefix": "wd:",
+          "id": "Q204659"
+        }
+      ],
+      "rels": []
+    },
+    {
+      "utterance": "Is the right ascension of malin 1 less than 15.1398?",
+      "fragments": [
+        "[DEF]",
+        "wd:",
+        "Q13442 right ascension",
+        "[DEF]",
+        "wd:",
+        "Q403830 Less Than Zero",
+        "[DEF]",
+        "wd:",
+        "Q927112 Less Than Jake",
+        "[DEF]",
+        "wd:",
+        "Q1583172 Less Than Perfect",
+        "[DEF]",
+        "wd:",
+        "Q204659 Less-than-truckload shipping"
+      ]
+    },
+    {
+      "inputs": "Is the right ascension of malin 1 less than 15.1398? <extra_id_59> <extra_id_53> Q13442 right ascension <extra_id_59> <extra_id_53> Q403830 Less Than Zero <extra_id_59> <extra_id_53> Q927112 Less Than Jake <extra_id_59> <extra_id_53> Q1583172 Less Than Perfect <extra_id_59> <extra_id_53> Q204659 Less-than-truckload shipping",
+      "labels": "<extra_id_4> <extra_id_19> <extra_id_33> <extra_id_53> q4180017 <extra_id_54> p6257 <extra_id_39> <extra_id_22> <extra_id_1> <extra_id_39> <extra_id_26> 15 <extra_id_38> 1398 <extra_id_12> <extra_id_15>"
+    }
+  ],
+  [
+    {
+      "utterance": "What is the complete list of records released by Jerry Lee Lewis?",
+      "ents": [
+        {
+          "uri": "http://www.wikidata.org/entity/Q174108",
+          "prefix": "wd:",
+          "id": "Q174108"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q473485",
+          "prefix": "wd:",
+          "id": "Q473485"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q492018",
+          "prefix": "wd:",
+          "id": "Q492018"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q604478",
+          "prefix": "wd:",
+          "id": "Q604478"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q784858",
+          "prefix": "wd:",
+          "id": "Q784858"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q6183964",
+          "prefix": "wd:",
+          "id": "Q6183964"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q202729",
+          "prefix": "wd:",
+          "id": "Q202729"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q19880654",
+          "prefix": "wd:",
+          "id": "Q19880654"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q3029950",
+          "prefix": "wd:",
+          "id": "Q3029950"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q19866808",
+          "prefix": "wd:",
+          "id": "Q19866808"
+        }
+      ],
+      "rels": [
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P577",
+          "prefix": "wdt:",
+          "id": "P577"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P1754",
+          "prefix": "wdt:",
+          "id": "P1754"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P1753",
+          "prefix": "wdt:",
+          "id": "P1753"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P291",
+          "prefix": "wdt:",
+          "id": "P291"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P348",
+          "prefix": "wdt:",
+          "id": "P348"
+        }
+      ]
+    },
+    {
+      "utterance": "What is the complete list of records released by Jerry Lee Lewis?",
+      "fragments": [
+        "[DEF]",
+        "wd:",
+        "Q174108 list of Formula One records",
+        "[DEF]",
+        "wd:",
+        "Q473485 list of spaceflight records",
+        "[DEF]",
+        "wd:",
+        "Q492018 list of weather records",
+        "[DEF]",
+        "wd:",
+        "Q604478 list of NHL records",
+        "[DEF]",
+        "wd:",
+        "Q784858 list of NHL records",
+        "[DEF]",
+        "wd:",
+        "Q6183964 Jerry Lee Lewis",
+        "[DEF]",
+        "wd:",
+        "Q202729 Jerry Lee Lewis",
+        "[DEF]",
+        "wd:",
+        "Q19880654 Jerry Lee Lewis",
+        "[DEF]",
+        "wd:",
+        "Q3029950 Jerry Lee Lewis discography",
+        "[DEF]",
+        "wd:",
+        "Q19866808 Best of Jerry Lee Lewis",
+        "[DEF]",
+        "wdt:",
+        "P577 publication date",
+        "[DEF]",
+        "wdt:",
+        "P1754 category related to list",
+        "[DEF]",
+        "wdt:",
+        "P1753 list related to category",
+        "[DEF]",
+        "wdt:",
+        "P291 place of publication",
+        "[DEF]",
+        "wdt:",
+        "P348 software version identifier"
+      ]
+    },
+    {
+      "inputs": "What is the complete list of records released by Jerry Lee Lewis? <extra_id_59> <extra_id_53> Q174108 list of Formula One records <extra_id_59> <extra_id_53> Q473485 list of spaceflight records <extra_id_59> <extra_id_53> Q492018 list of weather records <extra_id_59> <extra_id_53> Q604478 list of NHL records <extra_id_59> <extra_id_53> Q784858 list of NHL records <extra_id_59> <extra_id_53> Q6183964 Jerry Lee Lewis <extra_id_59> <extra_id_53> Q202729 Jerry Lee Lewis <extra_id_59> <extra_id_53> Q19880654 Jerry Lee Lewis <extra_id_59> <extra_id_53> Q3029950 Jerry Lee Lewis discography <extra_id_59> <extra_id_53> Q19866808 Best of Jerry Lee Lewis <extra_id_59> <extra_id_54> P577 publication date <extra_id_59> <extra_id_54> P1754 category related to list <extra_id_59> <extra_id_54> P1753 list related to category <extra_id_59> <extra_id_54> P291 place of publication <extra_id_59> <extra_id_54> P348 software version identifier",
+      "labels": "<extra_id_6> <extra_id_21> <extra_id_39> <extra_id_19> <extra_id_33> <extra_id_53> q202729 <extra_id_54> p358 <extra_id_39> <extra_id_38> <extra_id_39> <extra_id_54> p31 <extra_id_53> q273057 <extra_id_15>"
+    }
+  ],
+  [
+    {
+      "utterance": "What's Mary Lou Retton's International Olympic Committee athlete ID.",
+      "ents": [
+        {
+          "uri": "http://www.wikidata.org/entity/Q252",
+          "prefix": "wd:",
+          "id": "Q252"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1221",
+          "prefix": "wd:",
+          "id": "Q1221"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q9240",
+          "prefix": "wd:",
+          "id": "Q9240"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q41102",
+          "prefix": "wd:",
+          "id": "Q41102"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q54228",
+          "prefix": "wd:",
+          "id": "Q54228"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q40970",
+          "prefix": "wd:",
+          "id": "Q40970"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q1133691",
+          "prefix": "wd:",
+          "id": "Q1133691"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q41638",
+          "prefix": "wd:",
+          "id": "Q41638"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q126677",
+          "prefix": "wd:",
+          "id": "Q126677"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q235975",
+          "prefix": "wd:",
+          "id": "Q235975"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q580268",
+          "prefix": "wd:",
+          "id": "Q580268"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q15009",
+          "prefix": "wd:",
+          "id": "Q15009"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q2066131",
+          "prefix": "wd:",
+          "id": "Q2066131"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q2869050",
+          "prefix": "wd:",
+          "id": "Q2869050"
+        },
+        {
+          "uri": "http://www.wikidata.org/entity/Q2869484",
+          "prefix": "wd:",
+          "id": "Q2869484"
+        }
+      ],
+      "rels": [
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P213",
+          "prefix": "wdt:",
+          "id": "P213"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P214",
+          "prefix": "wdt:",
+          "id": "P214"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P234",
+          "prefix": "wdt:",
+          "id": "P234"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P236",
+          "prefix": "wdt:",
+          "id": "P236"
+        },
+        {
+          "uri": "http://www.wikidata.org/prop/direct/P247",
+          "prefix": "wdt:",
+          "id": "P247"
+        }
+      ]
+    },
+    {
+      "utterance": "What's Mary Lou Retton's International Olympic Committee athlete ID.",
+      "fragments": [
+        "[DEF]",
+        "wd:",
+        "Q252 Indonesia",
+        "[DEF]",
+        "wd:",
+        "Q1221 Idaho",
+        "[DEF]",
+        "wd:",
+        "Q9240 Indonesian",
+        "[DEF]",
+        "wd:",
+        "Q41102 .id",
+        "[DEF]",
+        "wd:",
+        "Q54228 International Designator",
+        "[DEF]",
+        "wd:",
+        "Q40970 International Olympic Committee",
+        "[DEF]",
+        "wd:",
+        "Q1133691 117th IOC Session",
+        "[DEF]",
+        "wd:",
+        "Q41638 Mary Lou Jepsen",
+        "[DEF]",
+        "wd:",
+        "Q126677 Mary Lou Williams",
+        "[DEF]",
+        "wd:",
+        "Q235975 Mary Lou Retton",
+        "[DEF]",
+        "wd:",
+        "Q580268 Athlete",
+        "[DEF]",
+        "wd:",
+        "Q15009 All-Terrain Hex-Legged Extra-Terrestrial Explorer (ATHLETE)",
+        "[DEF]",
+        "wd:",
+        "Q2066131 athlete",
+        "[DEF]",
+        "wd:",
+        "Q2869050 Athlete",
+        "[DEF]",
+        "wd:",
+        "Q2869484 The Athlete",
+        "[DEF]",
+        "wdt:",
+        "P213 ISNI",
+        "[DEF]",
+        "wdt:",
+        "P214 VIAF ID",
+        "[DEF]",
+        "wdt:",
+        "P234 InChI",
+        "[DEF]",
+        "wdt:",
+        "P236 ISSN",
+        "[DEF]",
+        "wdt:",
+        "P247 COSPAR ID"
+      ]
+    },
+    {
+      "inputs": "What's Mary Lou Retton's International Olympic Committee athlete ID. <extra_id_59> <extra_id_53> Q252 Indonesia <extra_id_59> <extra_id_53> Q1221 Idaho <extra_id_59> <extra_id_53> Q9240 Indonesian <extra_id_59> <extra_id_53> Q41102 .id <extra_id_59> <extra_id_53> Q54228 International Designator <extra_id_59> <extra_id_53> Q40970 International Olympic Committee <extra_id_59> <extra_id_53> Q1133691 117th IOC Session <extra_id_59> <extra_id_53> Q41638 Mary Lou Jepsen <extra_id_59> <extra_id_53> Q126677 Mary Lou Williams <extra_id_59> <extra_id_53> Q235975 Mary Lou Retton <extra_id_59> <extra_id_53> Q580268 Athlete <extra_id_59> <extra_id_53> Q15009 All-Terrain Hex-Legged Extra-Terrestrial Explorer (ATHLETE) <extra_id_59> <extra_id_53> Q2066131 athlete <extra_id_59> <extra_id_53> Q2869050 Athlete <extra_id_59> <extra_id_53> Q2869484 The Athlete <extra_id_59> <extra_id_54> P213 ISNI <extra_id_59> <extra_id_54> P214 VIAF ID <extra_id_59> <extra_id_54> P234 InChI <extra_id_59> <extra_id_54> P236 ISSN <extra_id_59> <extra_id_54> P247 COSPAR ID",
+      "labels": "<extra_id_6> <extra_id_21> <extra_id_39> <extra_id_19> <extra_id_33> <extra_id_53> q235975 <extra_id_54> p3171 <extra_id_39> <extra_id_15>"
+    }
+  ]
+]
