@@ -173,3 +173,5 @@ src/pipeline/baselines/*.json
 .vscode
 baseline/lcquad2/small_train_new_mix_dev_result56000.json
 falcon_links/*
+experiments
+weekend.json
