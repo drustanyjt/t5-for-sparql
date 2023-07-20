@@ -1,0 +1,56 @@
+{
+  "val_0.json": {
+    "accuracy": "0.03435"
+  },
+  "val_1.json": {
+    "accuracy": "0.13314"
+  },
+  "val_2.json": {
+    "accuracy": "0.22415"
+  },
+  "val_3.json": {
+    "accuracy": "0.29037"
+  },
+  "val_4.json": {
+    "accuracy": "0.30843"
+  },
+  "val_5.json": {
+    "accuracy": "0.35977"
+  },
+  "val_6.json": {
+    "accuracy": "0.37252"
+  },
+  "val_7.json": {
+    "accuracy": "0.39518"
+  },
+  "val_8.json": {
+    "accuracy": "0.42847"
+  },
+  "val_9.json": {
+    "accuracy": "0.43555"
+  },
+  "val_10.json": {
+    "accuracy": "0.46601"
+  },
+  "val_11.json": {
+    "accuracy": "0.46069"
+  },
+  "val_12.json": {
+    "accuracy": "0.48938"
+  },
+  "val_13.json": {
+    "accuracy": "0.49610"
+  },
+  "val_14.json": {
+    "accuracy": "0.51452"
+  },
+  "val_15.json": {
+    "accuracy": "0.51948"
+  },
+  "val_16.json": {
+    "accuracy": "0.51948"
+  },
+  "val_17.json": {
+    "accuracy": "0.51912"
+  }
+}
