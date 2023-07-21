@@ -1,5 +1,11 @@
 {
   "val_0.json": {
     "accuracy": "0.0254957507"
+  },
+  "val_final.json": {
+    "accuracy": "0.0254957507"
+  },
+  "test_final.json": {
+    "accuracy": "0.0254957507"
   }
 }
