@@ -70,3 +70,57 @@ If we can convert this into a python pipeline, it should be trivial to wrap this
 Falcon2 does not distinguish between different prefixes.
 All prefixes default to wdt (wikidata entity).
 These are valid links but do not work with the SPARQL endpoint
+
+# Presentation
+## Introduction
+Drustan
+CS & Math DDP
+
+## Problem Statement
+### What
+Text to SPARQL
+
+### Why
+SPARQL is used to query Knowledge Graphs, and we have our own KG where this might be useful.
+
+### How
+[LC-QuAD 2.0](http://jens-lehmann.org/files/2019/iswc_lcquad2.pdf)
+[QALD 9](https://ceur-ws.org/Vol-2241/paper-06.pdf)
+[KGQA](https://kgqa.github.io/leaderboard/)
+
+## Approaches
+### Text 2 SQL
+Well established problem with common benchmarks. (Dr.SPIDER)
+T5 + Picard
+Fine-tuning with "serialized inputs".
+
+### LLM without any annotations.
+SGPT_Q, Text2SPARQL4RDF
+
+### Using an intermediary 
+ValueNet4SPARQL
+
+### Two Subtasks
+Entity/Relation Linking & Query Generation
+
+T5-Baseline (Entities and relations)
+SGPT_Q,K (Entities only)
+
+## Results for 2 Sub Tasks
+
+
+### Entity/Relation Linking
+Falcon 2.0 (without reranking)
+1e1r
+5e5r
+10e10r
+
+Blink/ELQ
+
+### Qeury Generation
+T5 Reported, T5 Actual
+
+## Limitations
+
+
+## Challenges
