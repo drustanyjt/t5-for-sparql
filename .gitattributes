@@ -1,8 +1,8 @@
-dev_result_*.json filter=lfs diff=lfs merge=lfs -text
-dev_result*.json filter=lfs diff=lfs merge=lfs -text
-falcon_links/2/link_24066.json filter=lfs diff=lfs merge=lfs -text
-falcon_links/5ents_5rels/link_23999.json filter=lfs diff=lfs merge=lfs -text
-falcon_links/5ents_5rels/link_26999.json filter=lfs diff=lfs merge=lfs -text
+# dev_result_*.json filter=lfs diff=lfs merge=lfs -text
+# dev_result*.json filter=lfs diff=lfs merge=lfs -text
+# falcon_links/2/link_24066.json filter=lfs diff=lfs merge=lfs -text
+# falcon_links/5ents_5rels/link_23999.json filter=lfs diff=lfs merge=lfs -text
+# falcon_links/5ents_5rels/link_26999.json filter=lfs diff=lfs merge=lfs -text
 falcon_links/1ents-gold_0rels/link_28246.json filter=lfs diff=lfs merge=lfs -text
 falcon_links/10ents_10rels/link_28246.json filter=lfs diff=lfs merge=lfs -text
 falcon_links/5ents-gold_0rels/link_28246.json filter=lfs diff=lfs merge=lfs -text
