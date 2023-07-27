@@ -1,155 +1,308 @@
 {
   "val_0.json": {
-    "accuracy": 0.006234413965087282
+    "accuracy": "0.0166251039"
   },
   "val_1.json": {
-    "accuracy": 0.029093931837073983
+    "accuracy": "0.0602660017"
   },
   "val_2.json": {
-    "accuracy": 0.046550290939318374
+    "accuracy": "0.0777223608"
   },
   "val_3.json": {
-    "accuracy": 0.05278470490440565
+    "accuracy": "0.1047381546"
   },
   "val_4.json": {
-    "accuracy": 0.06400665004156277
+    "accuracy": "0.1213632585"
   },
   "val_5.json": {
-    "accuracy": 0.07315045719035744
+    "accuracy": "0.1014131338"
   },
   "val_6.json": {
-    "accuracy": 0.12967581047381546
+    "accuracy": "0.1438071488"
   },
   "val_7.json": {
-    "accuracy": 0.09642560266001662
+    "accuracy": "0.1517040732"
   },
   "val_8.json": {
-    "accuracy": 0.10640066500415628
+    "accuracy": "0.1550290939"
   },
   "val_9.json": {
-    "accuracy": 0.14463840399002495
+    "accuracy": "0.1645885287"
   },
   "val_10.json": {
-    "accuracy": 0.13216957605985039
+    "accuracy": "0.1745635910"
   },
   "val_11.json": {
-    "accuracy": 0.1708229426433915
+    "accuracy": "0.1845386534"
   },
   "val_12.json": {
-    "accuracy": 0.1778886118038238
+    "accuracy": "0.1907730673"
   },
   "val_13.json": {
-    "accuracy": 0.1828761429758936
+    "accuracy": "0.1899418121"
   },
   "val_14.json": {
-    "accuracy": 0.18661679135494597
+    "accuracy": "0.1957605985"
   },
   "val_15.json": {
-    "accuracy": 0.17040731504571904
+    "accuracy": "0.1978387365"
   },
   "val_16.json": {
-    "accuracy": 0.18703241895261846
+    "accuracy": "0.2015793849"
   },
   "val_17.json": {
-    "accuracy": 0.1974231088944306
+    "accuracy": "0.2094763092"
   },
   "val_18.json": {
-    "accuracy": 0.1974231088944306
+    "accuracy": "0.2086450540"
   },
   "val_19.json": {
-    "accuracy": 0.1974231088944306
+    "accuracy": "0.2082294264"
   },
   "val_20.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2082294264"
   },
   "val_21.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2082294264"
   },
   "val_22.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2082294264"
   },
   "val_23.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2082294264"
   },
   "val_24.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2082294264"
   },
   "val_25.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2082294264"
   },
   "val_26.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2082294264"
   },
   "val_27.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2086450540"
   },
   "val_28.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2086450540"
   },
   "val_29.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2082294264"
   },
   "val_30.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2082294264"
   },
   "val_31.json": {
-    "accuracy": 0.19825436408977556
+    "accuracy": "0.2086450540"
   },
   "val_32.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2086450540"
   },
   "val_33.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2086450540"
   },
   "val_34.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2086450540"
   },
   "val_35.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2086450540"
   },
   "val_36.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2086450540"
   },
   "val_37.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2082294264"
   },
   "val_38.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2078137988"
   },
   "val_39.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2078137988"
   },
   "val_40.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2078137988"
   },
   "val_41.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2073981712"
   },
   "val_42.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2073981712"
   },
   "val_43.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2078137988"
   },
   "val_44.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2078137988"
   },
   "val_45.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2078137988"
   },
   "val_46.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2078137988"
   },
   "val_47.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2078137988"
   },
   "val_48.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2082294264"
   },
   "val_49.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2082294264"
+  },
+  "val_50.json": {
+    "accuracy": "0.2082294264"
+  },
+  "val_51.json": {
+    "accuracy": "0.2082294264"
+  },
+  "val_52.json": {
+    "accuracy": "0.2082294264"
+  },
+  "val_53.json": {
+    "accuracy": "0.2082294264"
+  },
+  "val_54.json": {
+    "accuracy": "0.2078137988"
+  },
+  "val_55.json": {
+    "accuracy": "0.2078137988"
+  },
+  "val_56.json": {
+    "accuracy": "0.2073981712"
+  },
+  "val_57.json": {
+    "accuracy": "0.2073981712"
+  },
+  "val_58.json": {
+    "accuracy": "0.2073981712"
+  },
+  "val_59.json": {
+    "accuracy": "0.2073981712"
+  },
+  "val_60.json": {
+    "accuracy": "0.2073981712"
+  },
+  "val_61.json": {
+    "accuracy": "0.2078137988"
+  },
+  "val_62.json": {
+    "accuracy": "0.2078137988"
+  },
+  "val_63.json": {
+    "accuracy": "0.2073981712"
+  },
+  "val_64.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_65.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_66.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_67.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_68.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_69.json": {
+    "accuracy": "0.2065669160"
+  },
+  "val_70.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_71.json": {
+    "accuracy": "0.2065669160"
+  },
+  "val_72.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_73.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_74.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_75.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_76.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_77.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_78.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_79.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_80.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_81.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_82.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_83.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_84.json": {
+    "accuracy": "0.2065669160"
+  },
+  "val_85.json": {
+    "accuracy": "0.2065669160"
+  },
+  "val_86.json": {
+    "accuracy": "0.2065669160"
+  },
+  "val_87.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_88.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_89.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_90.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_91.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_92.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_93.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_94.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_95.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_96.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_97.json": {
+    "accuracy": "0.2069825436"
+  },
+  "val_98.json": {
+    "accuracy": "0.2065669160"
+  },
+  "val_99.json": {
+    "accuracy": "0.2065669160"
   },
   "val_final.json": {
-    "accuracy": 0.19783873649210307
+    "accuracy": "0.2065669160"
+  },
+  "test_final.json": {
+    "accuracy": "0.2013297320"
   }
 }

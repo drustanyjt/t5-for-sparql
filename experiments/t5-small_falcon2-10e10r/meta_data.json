@@ -1,0 +1,308 @@
+{
+  "val_0.json": {
+    "accuracy": "0.0467422096"
+  },
+  "val_1.json": {
+    "accuracy": "0.0775495751"
+  },
+  "val_2.json": {
+    "accuracy": "0.1373937677"
+  },
+  "val_3.json": {
+    "accuracy": "0.1738668555"
+  },
+  "val_4.json": {
+    "accuracy": "0.1901558074"
+  },
+  "val_5.json": {
+    "accuracy": "0.2103399433"
+  },
+  "val_6.json": {
+    "accuracy": "0.2163597734"
+  },
+  "val_7.json": {
+    "accuracy": "0.2298158640"
+  },
+  "val_8.json": {
+    "accuracy": "0.2383144476"
+  },
+  "val_9.json": {
+    "accuracy": "0.2524787535"
+  },
+  "val_10.json": {
+    "accuracy": "0.2627478754"
+  },
+  "val_11.json": {
+    "accuracy": "0.2666430595"
+  },
+  "val_12.json": {
+    "accuracy": "0.2850566572"
+  },
+  "val_13.json": {
+    "accuracy": "0.2963881020"
+  },
+  "val_14.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_15.json": {
+    "accuracy": "0.3013456091"
+  },
+  "val_16.json": {
+    "accuracy": "0.3013456091"
+  },
+  "val_17.json": {
+    "accuracy": "0.3013456091"
+  },
+  "val_18.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_19.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_20.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_21.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_22.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_23.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_24.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_25.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_26.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_27.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_28.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_29.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_30.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_31.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_32.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_33.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_34.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_35.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_36.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_37.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_38.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_39.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_40.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_41.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_42.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_43.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_44.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_45.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_46.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_47.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_48.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_49.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_50.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_51.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_52.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_53.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_54.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_55.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_56.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_57.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_58.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_59.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_60.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_61.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_62.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_63.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_64.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_65.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_66.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_67.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_68.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_69.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_70.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_71.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_72.json": {
+    "accuracy": "0.3009915014"
+  },
+  "val_73.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_74.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_75.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_76.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_77.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_78.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_79.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_80.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_81.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_82.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_83.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_84.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_85.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_86.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_87.json": {
+    "accuracy": "0.3006373938"
+  },
+  "val_88.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_89.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_90.json": {
+    "accuracy": "0.3002832861"
+  },
+  "val_91.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_92.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_93.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_94.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_95.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_96.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_97.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_98.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_99.json": {
+    "accuracy": "0.2999291785"
+  },
+  "val_final.json": {
+    "accuracy": "0.2999291785"
+  },
+  "test_final.json": {
+    "accuracy": "0.2779252965"
+  }
+}
