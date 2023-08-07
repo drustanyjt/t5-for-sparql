@@ -30,8 +30,18 @@ and then uses a search algorithm to match these entities to the likeliest human-
 **Entity Linking for Questions** with Blink ([code](), [paper]()) by Meta is an entity linker for Wikipedia, but also provides a mapping from Wikipedia pages to Wikidata entities.
 ELQ is a Bert-based entity linker, and comes with a method for modifying the knowledge base it links too.
 
-Relation linking is slightly more troublesome. It is also a problem more specific to Knowledge graphs than general Entity linking.
-Falcon 2.0 has worse results on relation linking than on entity linking.
+Relation linking is slightly more troublesome. It is a problem more specific to Knowledge graphs than general Entity linking.
+Falcon 2.0 has worse results on relation linking than on entity linking, and there is much less study on Relation Linking so far.
+
+## Query Generation
+
+Bannerjee ([code](), [paper]()) showed that when utterances are annotated with entities and relations,
+an LLM can be finetuned to convert these annotated questions to SPARQL quite reliably.
+
+I tried various experiments to investigate how the quality of annotations affects the finetuned model.
+A few trends I noticed was that when not all entities and relations were guaranteed to be present,
+having more annotations
+
 
 ## Some useful Commands
 
