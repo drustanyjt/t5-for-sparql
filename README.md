@@ -2,6 +2,36 @@
 
 I am trying to train an LLM model that can convert Natural Language Questions to SPARQL.
 
+## Overview
+
+This README sums up my research and experiments over the past 3 months on Text-2-SPARQL using T5.
+
+## Current State of Text-2-SPARQL
+
+The current approach for working on Text-2-SPARQL.
+
+## Benchmarks
+
+KGQA ([code](), [website]()), is an online leaderboard tracking results in Text-2-SPARQL conversion.
+I made use of LC-QuAD 2.0 ([code](), [paper]()), because I found most of the papers I referenced to also make use of it.
+
+## Entity + Relation Linking
+
+In NLP research in general, entity linking is the task of linking entities in a text to some knowledge base.
+For Text-2-SPARQL, there are however two kinds of objects we want to link to:
+
+1. Entities (Nodes in a KG)
+2. Relations (Edges in a KG)
+
+Entity linking seems to be an easier task, and there are more solutions available for it.
+A commonly cited method is **Falcon 2.0** ([code](), [paper]()).
+It makes use of rules the author came up with to determine which phrases represent entities in a given utterance,
+and then uses a search algorithm to match these entities to the likeliest human-readable labels.
+**Entity Linking for Questions** with Blink ([code](), [paper]()) by Meta is an entity linker for Wikipedia, but also provides a mapping from Wikipedia pages to Wikidata entities.
+ELQ is a Bert-based entity linker, and comes with a method for modifying the knowledge base it links too.
+
+Relation linking is slightly more troublesome. It is also a problem more specific to Knowledge graphs than general Entity linking.
+Falcon 2.0 has worse results on relation linking than on entity linking.
 
 ## Some useful Commands
 
@@ -70,18 +100,6 @@ If we can convert this into a python pipeline, it should be trivial to wrap this
 Falcon2 does not distinguish between different prefixes.
 All prefixes default to wdt (wikidata entity).
 These are valid links but do not work with the SPARQL endpoint
-
-# Presentation
-## Introduction
-Drustan
-CS & Math DDP
-
-## Problem Statement
-### What
-Text to SPARQL
-
-### Why
-SPARQL is used to query Knowledge Graphs, and we have our own KG where this might be useful.
 
 ### How
 [LC-QuAD 2.0](http://jens-lehmann.org/files/2019/iswc_lcquad2.pdf)
