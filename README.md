@@ -5,10 +5,28 @@ I am trying to train an LLM model that can convert Natural Language Questions to
 ## Overview
 
 This README sums up my research and experiments over the past 3 months on Text-2-SPARQL using T5.
+1. Splitting Text-2-SPARQL into entity/relation linking and query generation might be effective.
+1. An LLM can be trained to change the prefix of the annotations when necessary.
+1. A dataset with higher recall and lower precision results in a better model when finetuning if not
+all entities/relations are guaranteed,
+and a worse model when correct entities/relations are not guaranteed.
 
-## Current State of Text-2-SPARQL
+## Various Setups
 
-The current approach for working on Text-2-SPARQL.
+### LC-QuAD 2.0
+The file for LC-QuAD 2.0 cannot be downloaded directly from FigShare.
+Instead, you should download the dataset on your personal computer, and then upload it to
+a data sharing website that can be accessed by DSO (such as Google Drive),
+and download it from there instead.
+
+### Falcon 2.0
+I have a seperate [repository]() for this, with instructions there.
+The modified version of Falcon 2.0 comes with a script for generating a dataset
+that can be easily used with this repository's finetuning notebook.
+
+### Blink/ELQ
+The Titan server does not have enough RAM to load Blink for ELQ.
+You should try to use gpuserver 1 instead for any data processing that it might require.
 
 ## Benchmarks
 
@@ -38,10 +56,24 @@ Falcon 2.0 has worse results on relation linking than on entity linking, and the
 Bannerjee ([code](), [paper]()) showed that when utterances are annotated with entities and relations,
 an LLM can be finetuned to convert these annotated questions to SPARQL quite reliably.
 
-I tried various experiments to investigate how the quality of annotations affects the finetuned model.
-A few trends I noticed was that when not all entities and relations were guaranteed to be present,
-having more annotations
+My intuition is that T5 and other LLMs are able to learn the structure of a SPARQL query well,
+but due to the sheer number of complex Entity and Relation URIs,
+no LLM would be effective at converting an Natural Language Question into a SPARQL query without extra information
+about the URIs of the relevant entities/relations.
 
+In the experiments I conducted, it also seems that the correctness of the prefix of relations is not too important.
+Bannerjee uses the exact correct prefix in his annotations (such as p: or ps:) when needed.
+Howver I did my experiments always assuming the default wdt: prefix,
+and T5 was able to learn to adjust the prefixes as needed for the SPARQL query.
+This probably goes to show the type of prefix to be used can be somewhat inferred from the given Natural Language Question.
+
+The previously mentioned SGPT uses another technique in training where he masks the entity ID as well in the annotations.
+This might be useful to try.
+
+I tried various experiments to investigate how the quality of annotations affects the finetuned model.
+Not all required entities and relations were guaranteed to be present,
+having more annotations would increase performance.
+When all required entites and relations were present, having additional annotations (ie lower precision) would decrease performance.
 
 ## Some useful Commands
 
@@ -50,7 +82,6 @@ For executing notebooks with sreen output [papermill docs](https://papermill.rea
 ```bash
 papermill text2sparql.ipynb test2sparql.papermill.ipynb --stdout-file --no-progress-bar
 ```
-
 
 ## Dev Log
 
