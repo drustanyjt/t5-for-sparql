@@ -11,23 +11,6 @@ This README sums up my research and experiments over the past 3 months on Text-2
 all entities/relations are guaranteed,
 and a worse model when correct entities/relations are not guaranteed.
 
-## Various Setups
-
-### LC-QuAD 2.0
-The file for LC-QuAD 2.0 cannot be downloaded directly from FigShare.
-Instead, you should download the dataset on your personal computer, and then upload it to
-a data sharing website that can be accessed by DSO (such as Google Drive),
-and download it from there instead.
-
-### Falcon 2.0
-I have a seperate [repository]() for this, with instructions there.
-The modified version of Falcon 2.0 comes with a script for generating a dataset
-that can be easily used with this repository's finetuning notebook.
-
-### Blink/ELQ
-The Titan server does not have enough RAM to load Blink for ELQ.
-You should try to use gpuserver 1 instead for any data processing that it might require.
-
 ## Benchmarks
 
 KGQA ([code](), [website]()), is an online leaderboard tracking results in Text-2-SPARQL conversion.
@@ -75,20 +58,95 @@ Not all required entities and relations were guaranteed to be present,
 having more annotations would increase performance.
 When all required entites and relations were present, having additional annotations (ie lower precision) would decrease performance.
 
-## Some useful Commands
+## Using This Repo
 
-For executing notebooks with sreen output [papermill docs](https://papermill.readthedocs.io/en/latest/usage-cli.html):
+### Setup Conda Environment
+
+Use the `environment.yml` file to create a new conda environment like so:
 
 ```bash
-papermill text2sparql.ipynb test2sparql.papermill.ipynb --stdout-file --no-progress-bar
+conda env create -f environment.yml
 ```
 
-## Dev Log
+Then activate it as you would any other environment.
 
-### Week 3: 5 June - 11 June
+```bash
+conda activate py310
+```
 
-This week I presented my findings on the Text 2 SPARQL task to Zhiyuan,
-and we decided that it would be worthwhile to pursue the work by Bannerjee on finetuning T5.
+### Running Code
+
+Running the `experiments.ipynb` notebook to replicate the fine-tuning process using specified training data.
+Currently the `LINKS_PATH` variable must point to a json file containing a list of lists of JSON objects, an example would be:
+
+```json
+[
+  [
+    {
+      "utterance":"What periodical literature does Delta Air Lines use as a moutpiece?", // Must have an utterance in the first json
+      "ents":[],
+      "rels":[]
+    },
+    {
+      "utterance":"What periodical literature does Delta Air Lines use as a moutpiece?", 
+      "fragments":[]
+    },
+    {
+      "inputs":"What periodical literature does Delta Air Lines use as a moutpiece? ", // Must have an input in the third json
+      "labels":"<extra_id_6> <extra_id_21> <extra_id_39> <extra_id_19> <extra_id_33> <extra_id_53> q188920 <extra_id_54> p2813 <extra_id_39> <extra_id_38> <extra_id_39> <extra_id_54> p31 <extra_id_53> q1002697 <extra_id_15>" // Must have a masked label in the third json
+    }
+  ],
+]
+```
+
+This is just the structure of the data I output by default when annotating with Falcon 2.0.
+`experiments.ipynb` accesses the fields I commented to generate a train, val and test dataset.
+
+### Using Papermill
+
+Papermill ([docs]()) module allows us to run python notebooks from the command line,
+and should be available in the conda environment.
+
+To run `experiments.ipynb` for example use:
+
+```bash
+papermill experiments.ipynb experiments.papermill.ipynb --no-progress-bar --stdout-file 
+```
+
+This can be used in conjunction with `tmux` or `screen` to run the notebook in the background.
+
+## Various Other Setups
+
+### LC-QuAD 2.0
+The file for LC-QuAD 2.0 cannot be downloaded directly from [FigShare]() on DSO network.
+Instead, you should download the dataset on your personal computer, and then upload it to
+a data sharing website that can be accessed by DSO (such as Google Drive),
+and download it from there instead.
+
+### Falcon 2.0
+I have a seperate [repository]() for this, with instructions there.
+The modified version of Falcon 2.0 comes with a script for generating a dataset
+that can be easily used with this repository's finetuning notebook.
+
+### Blink/ELQ
+The Titan server does not have enough RAM to load Blink for ELQ.
+You should try to use gpuserver 1 instead for any data processing that it might require.
+
+## Other Ideas
+### Text 2 SQL
+Well established problem with common benchmarks. (Dr.SPIDER)
+T5 + Picard
+Fine-tuning with "serialized inputs".
+
+### LLM without any annotations.
+SGPT_Q, Text2SPARQL4RDF
+
+### Using an intermediary 
+ValueNet4SPARQL
+
+#### Development Notes
+
+We decided that it would be worthwhile to pursue the work by Bannerjee on finetuning T5.
 ValueNet4SPARQL might prove useful for validation of data between knowledge graphs and databases,
 but otherwise that and SGPT ill be left alone for now.
 
@@ -104,8 +162,6 @@ This gives a set of modifited NLQs, and modified SPARQL queries, that are used f
 
 The scripts are quite messy, so it would probably be better to reorganise the code into functions.
 
-### Week 4: 12 June - 17 June
-
 FALCON seems to succeed on the identifying hidden relations with no corresponding natural language label.
 
 Falcon has an F1 score of 83% on LC-QuAD
@@ -115,14 +171,6 @@ Learning Abstract Meaning Representation [2021](https://arxiv.org/pdf/2012.01707
 Implicit RL [2022](https://aclanthology.org/2022.findings-acl.312/0)
 Entity Linking using AMR [2023](https://2023.eswc-conferences.org/wp-content/uploads/2023/05/paper_Steinmetz_2023_Entity.pdf)
 
-#### 16 May
-
-Found out today that I was training T5 on **10%** of the dataset, and evaluating on 90%.
-This explained the overfitting issue, but also it was 80% accurate.
-
-I switched it to **70%** and **30%**.
-
-#### Plan
 
 There are a few experiments that might be useful to try.
     1. Finetuning T5 without passing any schema information as inputs,
@@ -134,52 +182,3 @@ It would probably speed up development if I convert this into a pipeline.
 Training the model has taken more time than anticipated.
 Even using `t5-small` sometimes CUDA runs out of memory during evaluation.
 If we can convert this into a python pipeline, it should be trivial to wrap this in Docker/Singularity and train on NUS HPC.
-
-
-### Problems
-
-Falcon2 does not distinguish between different prefixes.
-All prefixes default to wdt (wikidata entity).
-These are valid links but do not work with the SPARQL endpoint
-
-### How
-[LC-QuAD 2.0](http://jens-lehmann.org/files/2019/iswc_lcquad2.pdf)
-[QALD 9](https://ceur-ws.org/Vol-2241/paper-06.pdf)
-[KGQA](https://kgqa.github.io/leaderboard/)
-
-## Approaches
-### Text 2 SQL
-Well established problem with common benchmarks. (Dr.SPIDER)
-T5 + Picard
-Fine-tuning with "serialized inputs".
-
-### LLM without any annotations.
-SGPT_Q, Text2SPARQL4RDF
-
-### Using an intermediary 
-ValueNet4SPARQL
-
-### Two Subtasks
-Entity/Relation Linking & Query Generation
-
-T5-Baseline (Entities and relations)
-SGPT_Q,K (Entities only)
-
-## Results for 2 Sub Tasks
-
-
-### Entity/Relation Linking
-Falcon 2.0 (without reranking)
-1e1r
-5e5r
-10e10r
-
-Blink/ELQ
-
-### Qeury Generation
-T5 Reported, T5 Actual
-
-## Limitations
-
-
-## Challenges
