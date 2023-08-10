@@ -77,10 +77,7 @@ In the experiments I conducted, it also seems that the correctness of the prefix
 Bannerjee uses the exact correct prefix in his annotations (such as p: or ps:) when needed.
 Howver I did my experiments always assuming the default wdt: prefix,
 and T5 was able to learn to adjust the prefixes as needed for the SPARQL query.
-This probably goes to show the type of prefix to be used can be somewhat inferred from the given Natural Language Question.
-
-The previously mentioned SGPT uses another technique in training where he masks the entity ID as well in the annotations.
-This might be useful to try.
+This probably goes to show the type of prefix to be used can be somewhat inferred from the given Natural Language Question by an LLM.
 
 I tried various experiments to investigate how the quality of annotations affects the finetuned model.
 Not all required entities and relations were guaranteed to be present,
