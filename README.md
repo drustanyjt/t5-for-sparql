@@ -34,6 +34,13 @@ ELQ is a Bert-based entity linker, and comes with a method for modifying the kno
 Relation linking is slightly more troublesome. It is a problem more specific to Knowledge graphs than general Entity linking.
 Falcon 2.0 has worse results on relation linking than on entity linking, and there is much less study on Relation Linking so far.
 
+|   |   Entity   |   Relation   |
+|   |  F1 | C  | F1  | C  |
+|---|---|---|---|---|
+| k=1  | 0.56  | 0.45  | 0.30  |  0.16 |
+| k=5  | 0.61  |  0.50 |  0.30 | 0.17  |
+| k=10  | 0.68  | 0.57  | 0.41  |  0.26 |
+
 ## Query Generation
 
 Bannerjee ([code](), [paper]()) showed that when utterances are annotated with entities and relations,
