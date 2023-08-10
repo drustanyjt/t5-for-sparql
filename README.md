@@ -103,7 +103,7 @@ modified to include all missing but necessary entities or relations.
 Use the `environment.yml` file to create a new conda environment like so:
 
 ```bash
-conda create --name text2sparql --file environment.txt
+conda env create -f environment.yml
 ```
 
 Then activate it as you would any other environment.
