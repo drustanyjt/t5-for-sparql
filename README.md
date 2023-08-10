@@ -32,7 +32,9 @@ and then uses a search algorithm to match these entities to the likeliest human-
 ELQ is a Bert-based entity linker, and comes with a method for modifying the knowledge base it links too.
 
 Relation linking is slightly more troublesome. It is a problem more specific to Knowledge graphs than general Entity linking.
-Falcon 2.0 has worse results on relation linking than on entity linking, and there is much less study on Relation Linking so far.
+Falcon 2.0 attempts to do relation linking, but fairs worse in this regard than on entity linking, and there is much less study on Relation Linking so far.
+Additionally unlike entities, relations do not have corresponding Wikidata page entries.
+
 
 |   |  F1 | C  | F1  | C  |
 |---|---|---|---|---|
@@ -63,6 +65,8 @@ I tried various experiments to investigate how the quality of annotations affect
 Not all required entities and relations were guaranteed to be present,
 having more annotations would increase performance.
 When all required entites and relations were present, having additional annotations (ie lower precision) would decrease performance.
+The results are summarised below:
+
 
 ## Using This Repo
 
@@ -71,7 +75,7 @@ When all required entites and relations were present, having additional annotati
 Use the `environment.yml` file to create a new conda environment like so:
 
 ```bash
-conda env create -f environment.yml
+conda env create -f environment.txt
 ```
 
 Then activate it as you would any other environment.
